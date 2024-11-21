@@ -27,11 +27,11 @@ int main(){
 
         scanf("%d", &escolha);
 
-        if(escolha == 1) printf("Tamanho da string: %d\n", string_length(string));
+        if(escolha == 1) printf("Tamanho da string: %d\n\n", string_length(string));
 
         else if(escolha == 2){
             string_copy(string, copia);
-            printf("String copiada: %s\n", copia);
+            printf("String copiada: %s\n\n", copia);
         }
 
         else if(escolha == 3){

@@ -1,27 +1,32 @@
-==283703== Memcheck, a memory error detector
-==283703== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==283703== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==283703== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/3
-==283703== Parent PID: 283702
-==283703== 
-==283703== Conditional jump or move depends on uninitialised value(s)
-==283703==    at 0x1095AD: string_lower (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
-==283703==    by 0x109394: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
-==283703== 
-==283703== Conditional jump or move depends on uninitialised value(s)
-==283703==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==283703==    by 0x48D3D97: __printf_buffer (vfprintf-process-arg.c:435)
-==283703==    by 0x48D472A: __vfprintf_internal (vfprintf-internal.c:1544)
-==283703==    by 0x48C91A2: printf (printf.c:33)
-==283703==    by 0x1093B2: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
-==283703== 
-==283703== 
-==283703== HEAP SUMMARY:
-==283703==     in use at exit: 0 bytes in 0 blocks
-==283703==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==283703== 
-==283703== All heap blocks were freed -- no leaks are possible
-==283703== 
-==283703== Use --track-origins=yes to see where uninitialised values come from
-==283703== For lists of detected and suppressed errors, rerun with: -s
-==283703== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 0 from 0)
+==103271== Memcheck, a memory error detector
+==103271== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==103271== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==103271== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/3
+==103271== Parent PID: 103270
+==103271== 
+==103271== Conditional jump or move depends on uninitialised value(s)
+==103271==    at 0x1095AD: string_lower (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
+==103271==    by 0x109394: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
+==103271== 
+==103271== Conditional jump or move depends on uninitialised value(s)
+==103271==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103271==    by 0x48F2D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==103271==    by 0x48DC79E: printf (printf.c:33)
+==103271==    by 0x1093B2: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
+==103271== 
+==103271== Conditional jump or move depends on uninitialised value(s)
+==103271==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103271==    by 0x48F2D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==103271==    by 0x48DC79E: printf (printf.c:33)
+==103271==    by 0x1093EC: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
+==103271== 
+==103271== 
+==103271== HEAP SUMMARY:
+==103271==     in use at exit: 0 bytes in 0 blocks
+==103271==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==103271== 
+==103271== All heap blocks were freed -- no leaks are possible
+==103271== 
+==103271== Use --track-origins=yes to see where uninitialised values come from
+==103271== For lists of detected and suppressed errors, rerun with: -s
+==103271== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)

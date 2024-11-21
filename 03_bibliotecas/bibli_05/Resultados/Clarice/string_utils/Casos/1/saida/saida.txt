@@ -1,2 +1,2 @@
 *** stack smashing detected ***: terminated
-timeout: o comando monitorado despejou núcleo
+timeout: the monitored command dumped core

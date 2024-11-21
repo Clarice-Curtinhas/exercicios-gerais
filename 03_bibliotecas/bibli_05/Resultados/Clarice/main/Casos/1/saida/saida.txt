@@ -6,6 +6,7 @@
 6 - Encerrar o programa
 Opcao escolhida:
 Tamanho da string: 14
+
 1 - Tamanho da string
 2 - Copiar string
 3 - Converter string para letras maiusculas
@@ -14,6 +15,7 @@ Tamanho da string: 14
 6 - Encerrar o programa
 Opcao escolhida:
 String copiada: Hello world!
+
 
 1 - Tamanho da string
 2 - Copiar string

@@ -1,15 +1,15 @@
-==203803== Memcheck, a memory error detector
-==203803== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==203803== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==203803== Command: Resultados/ClariceCurtinhasSantos/esfera_utils/prog Resultados/ClariceCurtinhasSantos/esfera_utils/Casos/1
-==203803== Parent PID: 203802
-==203803== 
-==203803== 
-==203803== HEAP SUMMARY:
-==203803==     in use at exit: 0 bytes in 0 blocks
-==203803==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==203803== 
-==203803== All heap blocks were freed -- no leaks are possible
-==203803== 
-==203803== For lists of detected and suppressed errors, rerun with: -s
-==203803== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==91502== Memcheck, a memory error detector
+==91502== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==91502== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==91502== Command: Resultados/ClariceCurtinhasSantos/esfera_utils/prog Resultados/ClariceCurtinhasSantos/esfera_utils/Casos/1
+==91502== Parent PID: 91501
+==91502== 
+==91502== 
+==91502== HEAP SUMMARY:
+==91502==     in use at exit: 0 bytes in 0 blocks
+==91502==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==91502== 
+==91502== All heap blocks were freed -- no leaks are possible
+==91502== 
+==91502== For lists of detected and suppressed errors, rerun with: -s
+==91502== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

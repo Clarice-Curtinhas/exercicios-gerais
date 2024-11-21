@@ -1,6 +1,8 @@
 #ifndef _ESFERA_UTILS_H
 #define _ESFERA_UTILS_H
 
+
+#define PI 3.14
 /**
  * @brief Calcula o volume de uma esfera com raio R.
  * @param R O raio da esfera.

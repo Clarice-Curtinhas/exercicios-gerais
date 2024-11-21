@@ -1,44 +1,55 @@
-==282550== Memcheck, a memory error detector
-==282550== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==282550== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==282550== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/1
-==282550== Parent PID: 282549
-==282550== 
-==282550== Conditional jump or move depends on uninitialised value(s)
-==282550==    at 0x109442: string_length (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550==    by 0x1092E4: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550== 
-==282550== Conditional jump or move depends on uninitialised value(s)
-==282550==    at 0x10949B: string_copy (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550==    by 0x109320: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550== 
-==282550== Conditional jump or move depends on uninitialised value(s)
-==282550==    at 0x109527: string_upper (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550==    by 0x10935A: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550== 
-==282550== Conditional jump or move depends on uninitialised value(s)
-==282550==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==282550==    by 0x48D3D97: __printf_buffer (vfprintf-process-arg.c:435)
-==282550==    by 0x48D472A: __vfprintf_internal (vfprintf-internal.c:1544)
-==282550==    by 0x48C91A2: printf (printf.c:33)
-==282550==    by 0x109378: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550== 
-==282550== Conditional jump or move depends on uninitialised value(s)
-==282550==    at 0x1095A4: string_lower (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550==    by 0x109394: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550== 
-==282550== Conditional jump or move depends on uninitialised value(s)
-==282550==    at 0x109442: string_length (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550==    by 0x1095C5: string_reverse (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550==    by 0x1093CE: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
-==282550== 
-==282550== 
-==282550== HEAP SUMMARY:
-==282550==     in use at exit: 0 bytes in 0 blocks
-==282550==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==282550== 
-==282550== All heap blocks were freed -- no leaks are possible
-==282550== 
-==282550== Use --track-origins=yes to see where uninitialised values come from
-==282550== For lists of detected and suppressed errors, rerun with: -s
-==282550== ERROR SUMMARY: 8 errors from 6 contexts (suppressed: 0 from 0)
+==101922== Memcheck, a memory error detector
+==101922== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==101922== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==101922== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/1
+==101922== Parent PID: 101921
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x109442: string_length (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922==    by 0x1092E4: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x10949B: string_copy (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922==    by 0x109320: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x109527: string_upper (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922==    by 0x10935A: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==101922==    by 0x48F2D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==101922==    by 0x48DC79E: printf (printf.c:33)
+==101922==    by 0x109378: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x1095A4: string_lower (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922==    by 0x109394: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==101922==    by 0x48F2D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==101922==    by 0x48DC79E: printf (printf.c:33)
+==101922==    by 0x1093B2: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x109442: string_length (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922==    by 0x1095C5: string_reverse (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922==    by 0x1093CE: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== Conditional jump or move depends on uninitialised value(s)
+==101922==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==101922==    by 0x48F2D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==101922==    by 0x48DC79E: printf (printf.c:33)
+==101922==    by 0x1093EC: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/main/prog)
+==101922== 
+==101922== 
+==101922== HEAP SUMMARY:
+==101922==     in use at exit: 0 bytes in 0 blocks
+==101922==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==101922== 
+==101922== All heap blocks were freed -- no leaks are possible
+==101922== 
+==101922== Use --track-origins=yes to see where uninitialised values come from
+==101922== For lists of detected and suppressed errors, rerun with: -s
+==101922== ERROR SUMMARY: 8 errors from 8 contexts (suppressed: 0 from 0)

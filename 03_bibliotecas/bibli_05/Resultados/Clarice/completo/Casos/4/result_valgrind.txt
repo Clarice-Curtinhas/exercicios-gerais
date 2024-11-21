@@ -1,23 +1,22 @@
-==283862== Memcheck, a memory error detector
-==283862== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==283862== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==283862== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/4
-==283862== Parent PID: 283861
-==283862== 
-==283862== Conditional jump or move depends on uninitialised value(s)
-==283862==    at 0x484F238: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==283862==    by 0x48D3D97: __printf_buffer (vfprintf-process-arg.c:435)
-==283862==    by 0x48D472A: __vfprintf_internal (vfprintf-internal.c:1544)
-==283862==    by 0x48C91A2: printf (printf.c:33)
-==283862==    by 0x1093EC: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
-==283862== 
-==283862== 
-==283862== HEAP SUMMARY:
-==283862==     in use at exit: 0 bytes in 0 blocks
-==283862==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==283862== 
-==283862== All heap blocks were freed -- no leaks are possible
-==283862== 
-==283862== Use --track-origins=yes to see where uninitialised values come from
-==283862== For lists of detected and suppressed errors, rerun with: -s
-==283862== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==103460== Memcheck, a memory error detector
+==103460== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==103460== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==103460== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/4
+==103460== Parent PID: 103459
+==103460== 
+==103460== Conditional jump or move depends on uninitialised value(s)
+==103460==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103460==    by 0x48F2D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==103460==    by 0x48DC79E: printf (printf.c:33)
+==103460==    by 0x1093EC: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/completo/prog)
+==103460== 
+==103460== 
+==103460== HEAP SUMMARY:
+==103460==     in use at exit: 0 bytes in 0 blocks
+==103460==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==103460== 
+==103460== All heap blocks were freed -- no leaks are possible
+==103460== 
+==103460== Use --track-origins=yes to see where uninitialised values come from
+==103460== For lists of detected and suppressed errors, rerun with: -s
+==103460== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

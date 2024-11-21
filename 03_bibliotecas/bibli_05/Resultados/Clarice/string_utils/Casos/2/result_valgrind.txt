@@ -1,48 +1,48 @@
-==284251== Memcheck, a memory error detector
-==284251== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==284251== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==284251== Command: Resultados/Clarice/string_utils/prog Resultados/Clarice/string_utils/Casos/2
-==284251== Parent PID: 284250
-==284251== 
-==284251== Conditional jump or move depends on uninitialised value(s)
-==284251==    at 0x109471: string_length (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251==    by 0x109307: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251== 
-==284251== Conditional jump or move depends on uninitialised value(s)
-==284251==    at 0x109471: string_length (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251==    by 0x10949A: string_copy (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251==    by 0x10934A: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251== 
-==284251== Conditional jump or move depends on uninitialised value(s)
-==284251==    at 0x109471: string_length (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251==    by 0x10961A: string_reverse (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251==    by 0x1093F8: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251== 
-==284251== 
-==284251== Process terminating with default action of signal 6 (SIGABRT)
-==284251==    at 0x4907B1C: __pthread_kill_implementation (pthread_kill.c:44)
-==284251==    by 0x4907B1C: __pthread_kill_internal (pthread_kill.c:78)
-==284251==    by 0x4907B1C: pthread_kill@@GLIBC_2.34 (pthread_kill.c:89)
-==284251==    by 0x48AE26D: raise (raise.c:26)
-==284251==    by 0x48918FE: abort (abort.c:79)
-==284251==    by 0x48927B5: __libc_message_impl.cold (libc_fatal.c:132)
-==284251==    by 0x499FC18: __fortify_fail (fortify_fail.c:24)
-==284251==    by 0x49A0EA3: __stack_chk_fail (stack_chk_fail.c:24)
-==284251==    by 0x109443: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
-==284251== 
-==284251== HEAP SUMMARY:
-==284251==     in use at exit: 8,192 bytes in 2 blocks
-==284251==   total heap usage: 2 allocs, 0 frees, 8,192 bytes allocated
-==284251== 
-==284251== LEAK SUMMARY:
-==284251==    definitely lost: 0 bytes in 0 blocks
-==284251==    indirectly lost: 0 bytes in 0 blocks
-==284251==      possibly lost: 0 bytes in 0 blocks
-==284251==    still reachable: 8,192 bytes in 2 blocks
-==284251==         suppressed: 0 bytes in 0 blocks
-==284251== Reachable blocks (those to which a pointer was found) are not shown.
-==284251== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==284251== 
-==284251== Use --track-origins=yes to see where uninitialised values come from
-==284251== For lists of detected and suppressed errors, rerun with: -s
-==284251== ERROR SUMMARY: 678 errors from 3 contexts (suppressed: 0 from 0)
+==103854== Memcheck, a memory error detector
+==103854== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==103854== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==103854== Command: Resultados/Clarice/string_utils/prog Resultados/Clarice/string_utils/Casos/2
+==103854== Parent PID: 103853
+==103854== 
+==103854== Conditional jump or move depends on uninitialised value(s)
+==103854==    at 0x109471: string_length (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854==    by 0x109307: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854== 
+==103854== Conditional jump or move depends on uninitialised value(s)
+==103854==    at 0x109471: string_length (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854==    by 0x10949A: string_copy (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854==    by 0x10934A: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854== 
+==103854== Conditional jump or move depends on uninitialised value(s)
+==103854==    at 0x109471: string_length (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854==    by 0x109622: string_reverse (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854==    by 0x1093F8: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854== 
+==103854== 
+==103854== Process terminating with default action of signal 6 (SIGABRT)
+==103854==    at 0x49129FC: __pthread_kill_implementation (pthread_kill.c:44)
+==103854==    by 0x49129FC: __pthread_kill_internal (pthread_kill.c:78)
+==103854==    by 0x49129FC: pthread_kill@@GLIBC_2.34 (pthread_kill.c:89)
+==103854==    by 0x48BE475: raise (raise.c:26)
+==103854==    by 0x48A47F2: abort (abort.c:79)
+==103854==    by 0x4905675: __libc_message (libc_fatal.c:155)
+==103854==    by 0x49B2599: __fortify_fail (fortify_fail.c:26)
+==103854==    by 0x49B2565: __stack_chk_fail (stack_chk_fail.c:24)
+==103854==    by 0x109443: main (in /home/ccurtinhassantos/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Clarice/string_utils/prog)
+==103854== 
+==103854== HEAP SUMMARY:
+==103854==     in use at exit: 8,192 bytes in 2 blocks
+==103854==   total heap usage: 2 allocs, 0 frees, 8,192 bytes allocated
+==103854== 
+==103854== LEAK SUMMARY:
+==103854==    definitely lost: 0 bytes in 0 blocks
+==103854==    indirectly lost: 0 bytes in 0 blocks
+==103854==      possibly lost: 0 bytes in 0 blocks
+==103854==    still reachable: 8,192 bytes in 2 blocks
+==103854==         suppressed: 0 bytes in 0 blocks
+==103854== Reachable blocks (those to which a pointer was found) are not shown.
+==103854== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==103854== 
+==103854== Use --track-origins=yes to see where uninitialised values come from
+==103854== For lists of detected and suppressed errors, rerun with: -s
+==103854== ERROR SUMMARY: 1268 errors from 3 contexts (suppressed: 0 from 0)
