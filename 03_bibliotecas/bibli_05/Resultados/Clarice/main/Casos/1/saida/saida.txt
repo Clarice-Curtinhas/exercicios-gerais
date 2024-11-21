@@ -5,7 +5,7 @@
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida:
-Tamanho da string: 14
+Tamanho da string: 13
 
 1 - Tamanho da string
 2 - Copiar string
@@ -15,7 +15,6 @@ Tamanho da string: 14
 6 - Encerrar o programa
 Opcao escolhida:
 String copiada: Hello world!
-
 
 1 - Tamanho da string
 2 - Copiar string
@@ -42,7 +41,7 @@ String convertida para minusculas: hello world!
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida:
-String invertida: !dlrow olleh
+String invertida: dlrow olleh!
 
 1 - Tamanho da string
 2 - Copiar string

@@ -7,11 +7,15 @@
  * @return O tamanho da string.
  */
 int string_length(char *str){
-    int tam = 0;
+    int tam = 0, qnt = 2;
 
-    while(str[tam] != '\n') tam++;
+    while(str[tam] != '\0'){
+        if(str[tam] == '\n') break;
+        tam++;
+        qnt++;
+    }
 
-    return tam + 2;
+    return qnt;
 }
 
 /**
@@ -20,11 +24,9 @@ int string_length(char *str){
  * @param dest A string de destino.
  */
 void string_copy(char *src, char *dest){
-    int tam, total;
+    int tam;
 
-    total = string_length(src) - 2;
-
-    for(tam = 0; tam < total; tam++){
+    for(tam = 0; src[tam] != '\0'; tam++){
         dest[tam] = src[tam];
     }
     
@@ -68,22 +70,22 @@ void string_lower(char *str){
  * @param str A string para inverter.
  */
 void string_reverse(char *str){
-    int qnt = 0, tam;
-    tam = string_length(str) - 3;
+    int tam, inver;
 
+    tam = string_length(str);
     char invertido[tam];
 
-    while(tam >= 0){
-        invertido[tam] = str[qnt];
-        qnt++;
-        tam--;
+    tam = tam - 3;
+
+    for(inver = 0; inver <= tam; inver++){
+        invertido[inver] = str[tam - inver];
     }
 
-    invertido[qnt] = '\0';
-    qnt--;
+    invertido[inver] = '\0';
+    inver--;
 
-    while(qnt >= 0){
-        str[qnt] = invertido[qnt];
-        qnt--;
+    while(inver >= 0){
+        str[inver] = invertido[inver];
+        inver--;
     }
 }

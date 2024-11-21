@@ -5,7 +5,7 @@
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida:
-Tamanho da string: 16
+Tamanho da string: 15
 
 1 - Tamanho da string
 2 - Copiar string
@@ -15,7 +15,6 @@ Tamanho da string: 16
 6 - Encerrar o programa
 Opcao escolhida:
 String copiada: programacao ii
-
 
 1 - Tamanho da string
 2 - Copiar string
@@ -42,7 +41,7 @@ String convertida para minusculas: programacao ii
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida:
-String invertida: ii oacamargorp
+String invertida: i oacamargorpi
 
 1 - Tamanho da string
 2 - Copiar string

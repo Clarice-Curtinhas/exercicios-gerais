@@ -4,17 +4,16 @@
 #include <stdlib.h>
 
 int main(){
-    int tam = 0, escolha = 0;
+    int tam = -1, escolha = 0;
     char string[100];
     char copia[100];
 
-    scanf("%c", &string[0]);
-
-    while(string[tam] != '\n'){
+    do{
         tam++;
         scanf("%c", &string[tam]);
-    }
+    }while(string[tam] != '\n');
 
+    string[tam] = '\0';
 
     while(escolha != 6){
         printf("1 - Tamanho da string\n");
@@ -27,27 +26,29 @@ int main(){
 
         scanf("%d", &escolha);
 
-        if(escolha == 1) printf("Tamanho da string: %d\n\n", string_length(string));
+        if(escolha == 1) printf("Tamanho da string: %d", (string_length(string) ));
 
         else if(escolha == 2){
             string_copy(string, copia);
-            printf("String copiada: %s\n\n", copia);
+            printf("String copiada: %s", copia);
         }
 
         else if(escolha == 3){
             string_upper(string);
-            printf("String convertida para maiusculas: %s\n", string);
+            printf("String convertida para maiusculas: %s", string);
         }
 
         else if(escolha == 4){
             string_lower(string);
-            printf("String convertida para minusculas: %s\n", string);
+            printf("String convertida para minusculas: %s", string);
         }
 
         else if(escolha == 5){
             string_reverse(string);
-            printf("String invertida: %s\n", string);
+            printf("String invertida: %s", string);
         }
+
+        if(escolha != 6) printf("\n\n");
     }
 
     return 0;
