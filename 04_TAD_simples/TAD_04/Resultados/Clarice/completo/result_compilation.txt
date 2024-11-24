@@ -1,0 +1,4 @@
+main.c: In function ‘main’:
+main.c:7:27: warning: unused variable ‘qnt’ [-Wunused-variable]
+    7 |     int qntAlunos, count, qnt, ordemMatri, lugarOrdem;
+      |                           ^~~
