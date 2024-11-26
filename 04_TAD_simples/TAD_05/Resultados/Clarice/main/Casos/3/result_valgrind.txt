@@ -1,22 +1,22 @@
-==121113== Memcheck, a memory error detector
-==121113== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==121113== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==121113== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/3
-==121113== Parent PID: 121112
-==121113== 
-==121113== Conditional jump or move depends on uninitialised value(s)
-==121113==    at 0x10978E: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
-==121113== 
-==121113== Conditional jump or move depends on uninitialised value(s)
-==121113==    at 0x1097D9: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
-==121113== 
-==121113== 
-==121113== HEAP SUMMARY:
-==121113==     in use at exit: 0 bytes in 0 blocks
-==121113==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==121113== 
-==121113== All heap blocks were freed -- no leaks are possible
-==121113== 
-==121113== Use --track-origins=yes to see where uninitialised values come from
-==121113== For lists of detected and suppressed errors, rerun with: -s
-==121113== ERROR SUMMARY: 10 errors from 2 contexts (suppressed: 0 from 0)
+==159811== Memcheck, a memory error detector
+==159811== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==159811== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==159811== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/3
+==159811== Parent PID: 159810
+==159811== 
+==159811== Conditional jump or move depends on uninitialised value(s)
+==159811==    at 0x109BA7: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
+==159811== 
+==159811== Conditional jump or move depends on uninitialised value(s)
+==159811==    at 0x109BF2: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
+==159811== 
+==159811== 
+==159811== HEAP SUMMARY:
+==159811==     in use at exit: 0 bytes in 0 blocks
+==159811==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==159811== 
+==159811== All heap blocks were freed -- no leaks are possible
+==159811== 
+==159811== Use --track-origins=yes to see where uninitialised values come from
+==159811== For lists of detected and suppressed errors, rerun with: -s
+==159811== ERROR SUMMARY: 10 errors from 2 contexts (suppressed: 0 from 0)

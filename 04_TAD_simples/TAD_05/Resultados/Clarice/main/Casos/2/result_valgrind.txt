@@ -1,22 +1,22 @@
-==120981== Memcheck, a memory error detector
-==120981== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==120981== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==120981== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/2
-==120981== Parent PID: 120980
-==120981== 
-==120981== Conditional jump or move depends on uninitialised value(s)
-==120981==    at 0x10978E: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
-==120981== 
-==120981== Conditional jump or move depends on uninitialised value(s)
-==120981==    at 0x1097D9: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
-==120981== 
-==120981== 
-==120981== HEAP SUMMARY:
-==120981==     in use at exit: 0 bytes in 0 blocks
-==120981==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==120981== 
-==120981== All heap blocks were freed -- no leaks are possible
-==120981== 
-==120981== Use --track-origins=yes to see where uninitialised values come from
-==120981== For lists of detected and suppressed errors, rerun with: -s
-==120981== ERROR SUMMARY: 4 errors from 2 contexts (suppressed: 0 from 0)
+==159679== Memcheck, a memory error detector
+==159679== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==159679== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==159679== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/2
+==159679== Parent PID: 159678
+==159679== 
+==159679== Conditional jump or move depends on uninitialised value(s)
+==159679==    at 0x109BA7: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
+==159679== 
+==159679== Conditional jump or move depends on uninitialised value(s)
+==159679==    at 0x109BF2: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
+==159679== 
+==159679== 
+==159679== HEAP SUMMARY:
+==159679==     in use at exit: 0 bytes in 0 blocks
+==159679==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==159679== 
+==159679== All heap blocks were freed -- no leaks are possible
+==159679== 
+==159679== Use --track-origins=yes to see where uninitialised values come from
+==159679== For lists of detected and suppressed errors, rerun with: -s
+==159679== ERROR SUMMARY: 4 errors from 2 contexts (suppressed: 0 from 0)
