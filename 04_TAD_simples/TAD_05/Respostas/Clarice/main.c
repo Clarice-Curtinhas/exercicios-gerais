@@ -46,18 +46,8 @@ int main(){
         }
 
         else if(operacao == 3 && cadastros < maxContas){
-
-            for(nomeTam = 0; nome[nomeTam-1] != ' '; ){
-                scanf("%c", &nome[nomeTam]);
-                nomeTam++;
-            }
-            nome[nomeTam] = '\0';
-
-            for(CPFTam = 0; CPF[CPFTam-1] != ' '; ){
-                scanf("%c", &CPF[CPFTam]);
-                CPFTam++;
-            }
-            CPF[CPFTam] = '\0';
+            scanf("%s", nome);
+            scanf("%s", CPF);
 
             user[cadastros] = CriaUsuario(nome, CPF);
 

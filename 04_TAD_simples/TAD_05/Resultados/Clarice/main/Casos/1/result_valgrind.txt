@@ -1,22 +1,15 @@
-==159540== Memcheck, a memory error detector
-==159540== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==159540== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==159540== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/1
-==159540== Parent PID: 159539
-==159540== 
-==159540== Conditional jump or move depends on uninitialised value(s)
-==159540==    at 0x109BA7: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
-==159540== 
-==159540== Conditional jump or move depends on uninitialised value(s)
-==159540==    at 0x109BF2: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/04_TAD_simples/TAD_05/Resultados/Clarice/main/prog)
-==159540== 
-==159540== 
-==159540== HEAP SUMMARY:
-==159540==     in use at exit: 0 bytes in 0 blocks
-==159540==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
-==159540== 
-==159540== All heap blocks were freed -- no leaks are possible
-==159540== 
-==159540== Use --track-origins=yes to see where uninitialised values come from
-==159540== For lists of detected and suppressed errors, rerun with: -s
-==159540== ERROR SUMMARY: 4 errors from 2 contexts (suppressed: 0 from 0)
+==543559== Memcheck, a memory error detector
+==543559== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==543559== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==543559== Command: Resultados/Clarice/main/prog Resultados/Clarice/main/Casos/1
+==543559== Parent PID: 543558
+==543559== 
+==543559== 
+==543559== HEAP SUMMARY:
+==543559==     in use at exit: 0 bytes in 0 blocks
+==543559==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==543559== 
+==543559== All heap blocks were freed -- no leaks are possible
+==543559== 
+==543559== For lists of detected and suppressed errors, rerun with: -s
+==543559== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

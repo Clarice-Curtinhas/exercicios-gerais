@@ -1,0 +1,7 @@
+main.c: In function ‘main’:
+main.c:10:18: warning: unused variable ‘CPFTam’ [-Wunused-variable]
+   10 |     int nomeTam, CPFTam, numero, count;
+      |                  ^~~~~~
+main.c:10:9: warning: unused variable ‘nomeTam’ [-Wunused-variable]
+   10 |     int nomeTam, CPFTam, numero, count;
+      |         ^~~~~~~

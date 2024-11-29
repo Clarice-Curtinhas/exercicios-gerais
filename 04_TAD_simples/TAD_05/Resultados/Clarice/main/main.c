@@ -15,6 +15,7 @@ int main(){
 
     tUsuario user[maxContas];
     tConta conta[maxContas];
+
     
     while(operacao != 0){
 
@@ -45,18 +46,20 @@ int main(){
         }
 
         else if(operacao == 3 && cadastros < maxContas){
+            scanf("%s", nome);
+            scanf("%s", CPF);
 
-            for(nomeTam = 0; nome[nomeTam-1] != ' '; ){
+            /*for(nomeTam = 0; nome[nomeTam-1] != ' '; ){
                 scanf("%c", &nome[nomeTam]);
                 nomeTam++;
             }
-            nome[nomeTam] = '\0';
+            nome[nomeTam] = '\0';*/
 
-            for(CPFTam = 0; CPF[CPFTam-1] != ' '; ){
+            /*for(CPFTam = 0; CPF[CPFTam-1] != ' '; ){
                 scanf("%c", &CPF[CPFTam]);
                 CPFTam++;
             }
-            CPF[CPFTam] = '\0';
+            CPF[CPFTam] = '\0';*/
 
             user[cadastros] = CriaUsuario(nome, CPF);
 
@@ -73,7 +76,6 @@ int main(){
                 ImprimeConta(conta[count]);
             }
         }
-
     }
 
     return 0;
