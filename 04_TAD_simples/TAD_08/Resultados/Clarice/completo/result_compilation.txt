@@ -1,0 +1,4 @@
+departamento.c: In function ‘criaDepartamento’:
+departamento.c:37:11: warning: unused variable ‘media’ [-Wunused-variable]
+   37 |     float media;
+      |           ^~~~~
