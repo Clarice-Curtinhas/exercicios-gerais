@@ -1,0 +1,11 @@
+utils.c: In function ‘LeIntervalo’:
+utils.c:10:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   10 |     scanf("%d %d", m, n);
+      |     ^~~~~
+utils.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+  +++ |+#include <stdio.h>
+    1 | /**
+utils.c:10:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   10 |     scanf("%d %d", m, n);
+      |     ^~~~~
+utils.c:10:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
