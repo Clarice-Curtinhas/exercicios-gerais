@@ -1,0 +1,11 @@
+utils.c: In function ‘LeNumeros’:
+utils.c:8:9: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    8 |         scanf("%d ", &array[i]);
+      |         ^~~~~
+utils.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+  +++ |+#include <stdio.h>
+    1 | /**
+utils.c:8:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    8 |         scanf("%d ", &array[i]);
+      |         ^~~~~
+utils.c:8:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
