@@ -1,0 +1,10 @@
+==488657== Memcheck, a memory error detector
+==488657== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==488657== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==488657== Command: Resultados/Clarice/evento/prog Resultados/Clarice/evento/Casos/7
+==488657== Parent PID: 488656
+==488657== 
+==488657== Conditional jump or move depends on uninitialised value(s)
+==488657==    at 0x109407: trocarDataEvento (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_07/Resultados/Clarice/evento/prog)
+==488657==    by 0x10986E: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_07/Resultados/Clarice/evento/prog)
+==488657== 
