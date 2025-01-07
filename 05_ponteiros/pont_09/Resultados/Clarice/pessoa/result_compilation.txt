@@ -1,0 +1,8 @@
+pessoa.c: In function ‘LePessoa’:
+pessoa.c:34:10: warning: unused variable ‘p’ [-Wunused-variable]
+   34 |     char p[100];
+      |          ^
+pessoa.c: In function ‘AssociaFamiliasGruposPessoas’:
+pessoa.c:80:10: warning: unused variable ‘p’ [-Wunused-variable]
+   80 |     char p[100];
+      |          ^

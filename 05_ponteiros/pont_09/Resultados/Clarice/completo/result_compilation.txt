@@ -1,0 +1,21 @@
+main.c: In function ‘main’:
+main.c:18:34: warning: passing argument 1 of ‘AssociaFamiliasGruposPessoas’ from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |     AssociaFamiliasGruposPessoas(&pessoas);
+      |                                  ^~~~~~~~
+      |                                  |
+      |                                  tPessoa (*)[numPessoas] {aka struct Pessoa (*)[numPessoas]}
+In file included from main.c:3:
+pessoa.h:50:44: note: expected ‘tPessoa *’ {aka ‘struct Pessoa *’} but argument is of type ‘tPessoa (*)[numPessoas]’ {aka ‘struct Pessoa (*)[numPessoas]’}
+   50 | void AssociaFamiliasGruposPessoas(tPessoa *pessoas);
+      |                                   ~~~~~~~~~^~~~~~~
+main.c:6:21: warning: unused variable ‘numAssocia’ [-Wunused-variable]
+    6 |     int numPessoas, numAssocia;
+      |                     ^~~~~~~~~~
+pessoa.c: In function ‘LePessoa’:
+pessoa.c:34:10: warning: unused variable ‘p’ [-Wunused-variable]
+   34 |     char p[100];
+      |          ^
+pessoa.c: In function ‘AssociaFamiliasGruposPessoas’:
+pessoa.c:80:10: warning: unused variable ‘p’ [-Wunused-variable]
+   80 |     char p[100];
+      |          ^
