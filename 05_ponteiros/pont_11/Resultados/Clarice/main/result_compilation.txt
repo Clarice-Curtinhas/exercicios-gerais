@@ -1,0 +1,22 @@
+main.c: In function ‘main’:
+main.c:22:24: warning: assignment to ‘float (**)(float,  float)’ from incompatible pointer type ‘float (*)(float,  float)’ [-Wincompatible-pointer-types]
+   22 |             matematica = adicao;
+      |                        ^
+main.c:27:24: warning: assignment to ‘float (**)(float,  float)’ from incompatible pointer type ‘float (*)(float,  float)’ [-Wincompatible-pointer-types]
+   27 |             matematica = subtracao;
+      |                        ^
+main.c:32:24: warning: assignment to ‘float (**)(float,  float)’ from incompatible pointer type ‘float (*)(float,  float)’ [-Wincompatible-pointer-types]
+   32 |             matematica = multiplicacao;
+      |                        ^
+main.c:37:24: warning: assignment to ‘float (**)(float,  float)’ from incompatible pointer type ‘float (*)(float,  float)’ [-Wincompatible-pointer-types]
+   37 |             matematica = divisao;
+      |                        ^
+main.c:41:75: warning: passing argument 3 of ‘Calcular’ from incompatible pointer type [-Wincompatible-pointer-types]
+   41 |         printf("%.2f %c %.2f = %.2f\n", n1, simbolo, n2, Calcular(n1, n2, matematica));
+      |                                                                           ^~~~~~~~~~
+      |                                                                           |
+      |                                                                           float (**)(float,  float)
+In file included from main.c:4:
+calculadora.h:19:60: note: expected ‘CalculatoraCallback’ {aka ‘float (*)(float,  float)’} but argument is of type ‘float (**)(float,  float)’
+   19 | float Calcular(float num1, float num2, CalculatoraCallback operacao);
+      |                                        ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
