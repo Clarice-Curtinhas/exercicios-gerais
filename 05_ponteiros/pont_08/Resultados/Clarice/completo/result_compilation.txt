@@ -1,0 +1,10 @@
+main.c: In function ‘main’:
+main.c:35:33: warning: passing argument 1 of ‘OrdenaDepartamentosPorMedia’ from incompatible pointer type [-Wincompatible-pointer-types]
+   35 |     OrdenaDepartamentosPorMedia(&deptos, total);
+      |                                 ^~~~~~~
+      |                                 |
+      |                                 tDepartamento (*)[qntDepto] {aka struct departamento (*)[qntDepto]}
+In file included from main.c:3:
+tDepartamento.h:45:49: note: expected ‘tDepartamento *’ {aka ‘struct departamento *’} but argument is of type ‘tDepartamento (*)[qntDepto]’ {aka ‘struct departamento (*)[qntDepto]’}
+   45 | void OrdenaDepartamentosPorMedia(tDepartamento *vetor_deptos, int num_deptos);
+      |                                  ~~~~~~~~~~~~~~~^~~~~~~~~~~~
