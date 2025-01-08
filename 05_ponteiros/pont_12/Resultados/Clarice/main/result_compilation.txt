@@ -1,0 +1,24 @@
+main.c: In function ‘main’:
+main.c:14:14: warning: assignment to ‘int (**)(int,  int)’ from incompatible pointer type ‘int (*)(int,  int)’ [-Wincompatible-pointer-types]
+   14 |     operacao = soma;
+      |              ^
+main.c:15:55: warning: passing argument 2 of ‘AplicarOperacaoVetor’ from incompatible pointer type [-Wincompatible-pointer-types]
+   15 |     printf("Soma: %d\n", AplicarOperacaoVetor(&vetor, operacao));
+      |                                                       ^~~~~~~~
+      |                                                       |
+      |                                                       int (**)(int,  int)
+In file included from main.c:3:
+vetor.h:33:50: note: expected ‘Operation’ {aka ‘int (*)(int,  int)’} but argument is of type ‘int (**)(int,  int)’
+   33 | int AplicarOperacaoVetor(Vetor *vetor, Operation op);
+      |                                        ~~~~~~~~~~^~
+main.c:17:14: warning: assignment to ‘int (**)(int,  int)’ from incompatible pointer type ‘int (*)(int,  int)’ [-Wincompatible-pointer-types]
+   17 |     operacao = multiplica;
+      |              ^
+main.c:18:58: warning: passing argument 2 of ‘AplicarOperacaoVetor’ from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |     printf("Produto: %d\n", AplicarOperacaoVetor(&vetor, operacao));
+      |                                                          ^~~~~~~~
+      |                                                          |
+      |                                                          int (**)(int,  int)
+vetor.h:33:50: note: expected ‘Operation’ {aka ‘int (*)(int,  int)’} but argument is of type ‘int (**)(int,  int)’
+   33 | int AplicarOperacaoVetor(Vetor *vetor, Operation op);
+      |                                        ~~~~~~~~~~^~
