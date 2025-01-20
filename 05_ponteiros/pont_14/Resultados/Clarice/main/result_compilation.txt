@@ -1,0 +1,4 @@
+main.c: In function ‘main’:
+main.c:17:11: warning: unused variable ‘b’ [-Wunused-variable]
+   17 |     Botao b;
+      |           ^
