@@ -1,0 +1,13 @@
+main.c: In function ‘main’:
+main.c:10:8: warning: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   10 |     *v = CriaVetor(tam);
+      |        ^
+main.c:16:17: warning: passing argument 1 of ‘LiberaVetor’ from incompatible pointer type [-Wincompatible-pointer-types]
+   16 |     LiberaVetor(&v);
+      |                 ^~
+      |                 |
+      |                 int **
+In file included from main.c:3:
+utils.h:35:23: note: expected ‘int *’ but argument is of type ‘int **’
+   35 | void LiberaVetor(int *vetor);
+      |                  ~~~~~^~~~~
