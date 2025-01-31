@@ -1,44 +1,15 @@
-==227134== Memcheck, a memory error detector
-==227134== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==227134== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==227134== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/1
-==227134== Parent PID: 227133
-==227134== 
-==227134== Use of uninitialised value of size 8
-==227134==    at 0x109210: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_01/Resultados/Clarice/completo/prog)
-==227134== 
-==227134== Invalid write of size 4
-==227134==    at 0x109210: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_01/Resultados/Clarice/completo/prog)
-==227134==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==227134== 
-==227134== 
-==227134== Process terminating with default action of signal 11 (SIGSEGV)
-==227134==  Access not within mapped region at address 0x0
-==227134==    at 0x109210: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_01/Resultados/Clarice/completo/prog)
-==227134==  If you believe this happened as a result of a stack
-==227134==  overflow in your program's main thread (unlikely but
-==227134==  possible), you can try to increase the size of the
-==227134==  main thread stack using the --main-stacksize= flag.
-==227134==  The main thread stack size used in this run was 8388608.
-==227134== 
-==227134== HEAP SUMMARY:
-==227134==     in use at exit: 4,136 bytes in 2 blocks
-==227134==   total heap usage: 2 allocs, 0 frees, 4,136 bytes allocated
-==227134== 
-==227134== 40 bytes in 1 blocks are definitely lost in loss record 1 of 2
-==227134==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==227134==    by 0x109259: CriaVetor (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_01/Resultados/Clarice/completo/prog)
-==227134==    by 0x109208: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_01/Resultados/Clarice/completo/prog)
-==227134== 
-==227134== LEAK SUMMARY:
-==227134==    definitely lost: 40 bytes in 1 blocks
-==227134==    indirectly lost: 0 bytes in 0 blocks
-==227134==      possibly lost: 0 bytes in 0 blocks
-==227134==    still reachable: 4,096 bytes in 1 blocks
-==227134==         suppressed: 0 bytes in 0 blocks
-==227134== Reachable blocks (those to which a pointer was found) are not shown.
-==227134== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==227134== 
-==227134== Use --track-origins=yes to see where uninitialised values come from
-==227134== For lists of detected and suppressed errors, rerun with: -s
-==227134== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==206503== Memcheck, a memory error detector
+==206503== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==206503== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==206503== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/1
+==206503== Parent PID: 206502
+==206503== 
+==206503== 
+==206503== HEAP SUMMARY:
+==206503==     in use at exit: 0 bytes in 0 blocks
+==206503==   total heap usage: 3 allocs, 3 frees, 8,232 bytes allocated
+==206503== 
+==206503== All heap blocks were freed -- no leaks are possible
+==206503== 
+==206503== For lists of detected and suppressed errors, rerun with: -s
+==206503== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * Cria um vetor de inteiros de tamanho especificado, alocado dinamicamente.
@@ -32,7 +34,7 @@ void LeVetor(int *vetor, int tamanho){
  * @return Média dos valores do vetor.
 */
 float CalculaMedia(int *vetor, int tamanho){
-    float soma = 0, media;
+    float soma = 0;
 
     for(int i = 0; i < tamanho; i++){
         soma += vetor[i];

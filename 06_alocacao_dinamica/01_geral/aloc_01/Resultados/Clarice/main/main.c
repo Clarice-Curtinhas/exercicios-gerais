@@ -4,16 +4,19 @@
 
 int main(){
     int tam, *v;
+    float media;
 
     scanf("%d\n", &tam);
 
-    *v = CriaVetor(tam);
+    v = CriaVetor(tam);
 
-    /*LeVetor(&v, tam);
+    LeVetor(v, tam);
 
-    CalculaMedia(&v, tam);*/
+    media = CalculaMedia(v, tam);
+    
+    printf("%.2f\n", media);
 
-    LiberaVetor(&v);
+    LiberaVetor(v);
 
     return 0;
 }
