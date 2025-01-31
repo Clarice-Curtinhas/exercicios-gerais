@@ -1,0 +1,4 @@
+utils_char.c: In function ‘LeVetor’:
+utils_char.c:35:16: warning: unused variable ‘tam’ [-Wunused-variable]
+   35 |     int i = 0, tam;
+      |                ^~~
