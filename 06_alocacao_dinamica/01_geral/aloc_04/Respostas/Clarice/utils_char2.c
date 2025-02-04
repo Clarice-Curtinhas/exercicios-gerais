@@ -32,20 +32,12 @@ char *CriaVetorTamPadrao(){
  * @return Ponteiro para o novo vetor.
  */
 char *AumentaTamanhoVetor(char* vetor, int tamanhoantigo){
-    char v[tamanhoantigo];
     int i;
 
-    for(i = 0; i <= tamanhoantigo; i++){
-        v[i] = vetor[i];
-    }
-    
-    free(vetor);
+    vetor = (char *)realloc(vetor, tamanhoantigo+TAM_PADRAO+1 * sizeof(char));
 
-    vetor = (char *)calloc(tamanhoantigo+TAM_PADRAO+1, sizeof(char));
-
-    for(i = 0; i < tamanhoantigo+TAM_PADRAO; i++){
-        if(i < tamanhoantigo) vetor[i] = v[i]; 
-        else vetor[i] = '_';
+    for(i = tamanhoantigo; i < tamanhoantigo+TAM_PADRAO; i++){
+        vetor[i] = '_';
     }
 
     vetor[i] = '\0';
