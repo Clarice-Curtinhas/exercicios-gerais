@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "tabuleiro.h"
+#ifndef _JOGADA_H
+#define _JOGADA_H
+
 
 typedef struct{
     int x;
@@ -14,15 +14,7 @@ typedef struct{
  * 
  * @return a estrutura do tipo tJogada alocada.
  */
-tJogada* CriaJogada(){
-    tJogada *jogada;
-
-    jogada->x = 0;
-    jogada->y = 0;
-    jogada->sucesso = 0;
-
-    return jogada;
-}
+tJogada* CriaJogada();
 
 
 /**
@@ -30,9 +22,7 @@ tJogada* CriaJogada(){
  * 
  * @param jogada a estrutura do tipo tJogada a ser liberada.
  */
-void DestroiJogada(tJogada* jogada){
-    free(jogada);
-}
+void DestroiJogada(tJogada* jogada);
 
 
 /**
@@ -40,13 +30,7 @@ void DestroiJogada(tJogada* jogada){
  * 
  * @param jogada a estrutura do tipo tJogada a ser preenchida.
  */
-void LeJogada(tJogada* jogada){
-    scanf("%d %d\n", &jogada->x, &jogada->y);
-
-    if(jogada->x >= 0 && jogada->y <= 2){
-        jogada->sucesso = 1;
-    }
-}
+void LeJogada(tJogada* jogada);
 
 
 /**
@@ -56,9 +40,7 @@ void LeJogada(tJogada* jogada){
  * 
  * @return a coordenada X da jogada.
  */
-int ObtemJogadaX(tJogada* jogada){
-    return jogada->x;
-}
+int ObtemJogadaX(tJogada* jogada);
 
 
 /**
@@ -68,9 +50,7 @@ int ObtemJogadaX(tJogada* jogada){
  * 
  * @return a coordenada Y da jogada.
  */
-int ObtemJogadaY(tJogada* jogada){
-    return jogada->y;
-}
+int ObtemJogadaY(tJogada* jogada);
 
 
 /**
@@ -80,6 +60,6 @@ int ObtemJogadaY(tJogada* jogada){
  * 
  * @return 1 se a jogada foi bem sucedida, 0 caso contrário.
  */
-int FoiJogadaBemSucedida(tJogada* jogada){
-    return jogada->sucesso;
-}
+int FoiJogadaBemSucedida(tJogada* jogada);
+
+#endif

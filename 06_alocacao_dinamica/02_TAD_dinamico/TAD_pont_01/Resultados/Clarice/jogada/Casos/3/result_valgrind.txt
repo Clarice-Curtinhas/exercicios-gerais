@@ -1,0 +1,48 @@
+==12198== Memcheck, a memory error detector
+==12198== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12198== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==12198== Command: Resultados/Clarice/jogada/prog Resultados/Clarice/jogada/Casos/3
+==12198== Parent PID: 12197
+==12198== 
+==12198== Use of uninitialised value of size 8
+==12198==    at 0x109215: CriaJogada (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109386: JogaJogador (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109960: ComecaJogo (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109B69: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198== 
+==12198== Invalid write of size 4
+==12198==    at 0x109215: CriaJogada (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109386: JogaJogador (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109960: ComecaJogo (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109B69: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==12198== 
+==12198== 
+==12198== Process terminating with default action of signal 11 (SIGSEGV)
+==12198==  Access not within mapped region at address 0x0
+==12198==    at 0x109215: CriaJogada (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109386: JogaJogador (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109960: ComecaJogo (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==    by 0x109B69: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
+==12198==  If you believe this happened as a result of a stack
+==12198==  overflow in your program's main thread (unlikely but
+==12198==  possible), you can try to increase the size of the
+==12198==  main thread stack using the --main-stacksize= flag.
+==12198==  The main thread stack size used in this run was 8388608.
+==12198== 
+==12198== HEAP SUMMARY:
+==12198==     in use at exit: 81 bytes in 8 blocks
+==12198==   total heap usage: 8 allocs, 0 frees, 81 bytes allocated
+==12198== 
+==12198== LEAK SUMMARY:
+==12198==    definitely lost: 0 bytes in 0 blocks
+==12198==    indirectly lost: 0 bytes in 0 blocks
+==12198==      possibly lost: 0 bytes in 0 blocks
+==12198==    still reachable: 81 bytes in 8 blocks
+==12198==         suppressed: 0 bytes in 0 blocks
+==12198== Reachable blocks (those to which a pointer was found) are not shown.
+==12198== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==12198== 
+==12198== Use --track-origins=yes to see where uninitialised values come from
+==12198== For lists of detected and suppressed errors, rerun with: -s
+==12198== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
