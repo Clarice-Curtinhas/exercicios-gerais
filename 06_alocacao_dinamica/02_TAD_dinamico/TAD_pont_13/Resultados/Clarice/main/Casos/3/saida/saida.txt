@@ -1,1 +1,6 @@
-valgrind: Resultados/Clarice/main/prog: No such file or directory
+TOTAL PACIENTES: 2
+MEDIA IDADE (ANOS): 21
+TOTAL LESOES: 1
+TOTAL CIRURGIAS: 1
+LISTA DE PACIENTES:
+- SHOKO-KOMI - L1 

@@ -1,1 +1,8 @@
-valgrind: Resultados/Clarice/main/prog: No such file or directory
+TOTAL PACIENTES: 4
+MEDIA IDADE (ANOS): 29
+TOTAL LESOES: 3
+TOTAL CIRURGIAS: 2
+LISTA DE PACIENTES:
+- TRISTANA - L8 
+- LUCIAN - L2 
+- LUX - L100 
