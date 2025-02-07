@@ -1,13 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
 
 #include "jogador.h"
 #include "tabuleiro.h"
+#include "jogo.h"
 
-typedef struct{
+/*typedef struct{
     tTabuleiro* tabuleiro;
     tJogador* jogador1;
     tJogador* jogador2;
     
-} tJogo;
+} tJogo;*/
 
 /**
  * Aloca e retorna uma estrutura do tipo tJogo.
@@ -15,7 +18,13 @@ typedef struct{
  * 
  * @return a estrutura do tipo tJogo alocada.
  */
-tJogo* CriaJogo();
+tJogo* CriaJogo(){
+    tJogo *jogo;
+
+    jogo = (tJogo*) calloc(1, sizeof(tJogo));
+
+    return jogo;
+}
 
 
 /**
@@ -23,7 +32,33 @@ tJogo* CriaJogo();
  * 
  * @param jogo o jogo a ser iniciado.
  */
-void ComecaJogo(tJogo* jogo);
+void ComecaJogo(tJogo* jogo){
+    int vez;
+
+    vez = 1;
+
+    jogo->tabuleiro = CriaTabuleiro();
+    jogo->jogador1 = CriaJogador(1);
+    jogo->jogador2 = CriaJogador(2);
+
+    while(AcabouJogo(jogo) == 0){
+        if(vez == 1){
+            JogaJogador(jogo->jogador1, jogo->tabuleiro);
+            vez++;
+        }
+
+        else if(vez == 2){
+            JogaJogador(jogo->jogador2, jogo->tabuleiro);
+            vez--;
+        }
+
+        ImprimeTabuleiro(jogo->tabuleiro);
+    }
+
+    if((VenceuJogador(jogo->jogador1, jogo->tabuleiro)) == 1) printf("JOGADOR 1 Venceu!\n");
+    else if((VenceuJogador(jogo->jogador2, jogo->tabuleiro)) == 1) printf("JOGADOR 2 Venceu!\n");
+    else printf("Sem vencedor!\n");
+}
 
 
 /**
@@ -33,7 +68,15 @@ void ComecaJogo(tJogo* jogo);
  * 
  * @return 1 se o jogo acabou, 0 caso contrário.
  */
-int AcabouJogo(tJogo* jogo);
+int AcabouJogo(tJogo* jogo){
+    if(TemPosicaoLivreTabuleiro(jogo->tabuleiro) == 0) return 1;
+
+    else if((VenceuJogador(jogo->jogador1, jogo->tabuleiro)) == 1) return 1;
+
+    else if((VenceuJogador(jogo->jogador2, jogo->tabuleiro)) == 1) return 1;
+
+    return 0;
+}
 
 
 /**
@@ -41,7 +84,15 @@ int AcabouJogo(tJogo* jogo);
  * 
  * @return 1 se o usuário deseja jogar novamente, 0 caso contrário.
  */
-int ContinuaJogo();
+int ContinuaJogo(){
+    char opcao;
+
+    printf("Jogar novamente? (s,n)\n");
+    while((scanf("%c", &opcao)) == 1 && (opcao != 's' && opcao != 'n'));
+    scanf("\n");
+
+    return (opcao == 's');
+}
 
 
 /**
@@ -49,4 +100,11 @@ int ContinuaJogo();
  * 
  * @param jogo a estrutura do tipo tJogo a ser liberada.
  */
-void DestroiJogo(tJogo* jogo);
+void DestroiJogo(tJogo* jogo){
+
+    DestroiTabuleiro(jogo->tabuleiro);
+    DestroiJogador(jogo->jogador1);
+    DestroiJogador(jogo->jogador2);
+
+    free(jogo);
+}

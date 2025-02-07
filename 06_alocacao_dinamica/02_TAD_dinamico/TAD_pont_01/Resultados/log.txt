@@ -1,0 +1,485 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: Clarice
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Clarice:
+ - Diretório Resultados/Clarice criado com sucesso!
+ - Diretório Resultados/Clarice/main criado com sucesso!
+ - Diretório Resultados/Clarice/completo criado com sucesso!
+ - Diretório Resultados/Clarice/jogada criado com sucesso!
+ - Diretório Resultados/Clarice/jogador criado com sucesso!
+ - Diretório Resultados/Clarice/tabuleiro criado com sucesso!
+ - Diretório Resultados/Clarice/jogo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Clarice/jogada.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/jogada.h' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/jogador.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/jogador.h' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/jogo.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/jogo.h' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/main.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/tabuleiro.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/tabuleiro.h' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/main
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/main
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/main
+ - Removendo o main.o do professor da pasta Resultados/Clarice/main
+ - Copiando o Respostas/Clarice/main.c do aluno para a pasta Resultados/Clarice/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/jogada.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/jogada.h do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/jogador.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/jogador.h do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/jogo.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/jogo.h do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/main.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/tabuleiro.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/tabuleiro.h do aluno para a pasta Resultados/Clarice/completo
+ - Pasta jogada:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/jogada
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/jogada
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/jogada
+ - Removendo o jogada.o do professor da pasta Resultados/Clarice/jogada
+ - Copiando o Respostas/Clarice/jogada.c do aluno para a pasta Resultados/Clarice/jogada
+ - Pasta jogador:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/jogador
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/jogador
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/jogador
+ - Removendo o jogador.o do professor da pasta Resultados/Clarice/jogador
+ - Copiando o Respostas/Clarice/jogador.c do aluno para a pasta Resultados/Clarice/jogador
+ - Pasta tabuleiro:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/tabuleiro
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/tabuleiro
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/tabuleiro
+ - Removendo o tabuleiro.o do professor da pasta Resultados/Clarice/tabuleiro
+ - Copiando o Respostas/Clarice/tabuleiro.c do aluno para a pasta Resultados/Clarice/tabuleiro
+ - Pasta jogo:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/jogo
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/jogo
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/jogo
+ - Removendo o jogo.o do professor da pasta Resultados/Clarice/jogo
+ - Copiando o Respostas/Clarice/jogo.c do aluno para a pasta Resultados/Clarice/jogo
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Compilação dos arquivos do aluno na pasta main ok!
+ - Arquivo de output gerado: Resultados/Clarice/main/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta completo ok!
+ - Arquivo de output gerado: Resultados/Clarice/completo/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta jogada ok!
+ - Arquivo de output gerado: Resultados/Clarice/jogada/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta jogador ok!
+ - Arquivo de output gerado: Resultados/Clarice/jogador/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta tabuleiro ok!
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta jogo ok!
+ - Arquivo de output gerado: Resultados/Clarice/jogo/result_compilation.txt
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/completo/result_linking.txt
+ - Pasta jogada:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogada/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Clarice/jogada/result_linking.txt
+ - Pasta jogador:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogador/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Clarice/jogador/result_linking.txt
+ - Pasta tabuleiro:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tabuleiro/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/result_linking.txt
+ - Pasta jogo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Clarice/jogo/result_linking.txt
+ - Arquivos Linkados: Erro! 2 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 6:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
+ -----
+ - Pasta completo / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 6:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta completo (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
+ -----
+ - Pasta jogada / Caso 1:
+ - Arquivo de output gerado: Resultados/Clarice/jogada/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 2:
+ - Arquivo de output gerado: Resultados/Clarice/jogada/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 68, frees: 68, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 3:
+ - Arquivo de output gerado: Resultados/Clarice/jogada/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 47, frees: 47, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 4:
+ - Arquivo de output gerado: Resultados/Clarice/jogada/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 49, frees: 49, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 5:
+ - Arquivo de output gerado: Resultados/Clarice/jogada/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta jogada / Caso 6:
+ - Arquivo de output gerado: Resultados/Clarice/jogada/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 132, frees: 132, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta jogada (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
+ -----
+ - Pasta jogador / Caso 1:
+ - Arquivo de output gerado: Resultados/Clarice/jogador/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 47, frees: 47, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogador / Caso 2:
+ - Arquivo de output gerado: Resultados/Clarice/jogador/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 38, frees: 38, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogador / Caso 3:
+ - Arquivo de output gerado: Resultados/Clarice/jogador/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 29, frees: 29, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogador / Caso 4:
+ - Arquivo de output gerado: Resultados/Clarice/jogador/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 29, frees: 29, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogador / Caso 5:
+ - Arquivo de output gerado: Resultados/Clarice/jogador/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 47, frees: 47, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogador / Caso 6:
+ - Arquivo de output gerado: Resultados/Clarice/jogador/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 92, frees: 92, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta jogador (máximo 1.67) - 0 de 60 - 0% de 1.67: 0.
+ -----
+ - Pasta tabuleiro / Caso 1:
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 2:
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 68, frees: 68, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 3:
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 47, frees: 47, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 4:
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 49, frees: 49, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 5:
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta tabuleiro / Caso 6:
+ - Arquivo de output gerado: Resultados/Clarice/tabuleiro/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 132, frees: 132, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta tabuleiro (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
+ -----
+ - Pasta jogo / Caso 1:
+ - Arquivo de output gerado: Resultados/Clarice/jogo/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 19, frees: 11, errors: 0 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogo / Caso 2:
+ - Arquivo de output gerado: Resultados/Clarice/jogo/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 18, frees: 10, errors: 0 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogo / Caso 3:
+ - Arquivo de output gerado: Resultados/Clarice/jogo/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 16, frees: 8, errors: 0 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogo / Caso 4:
+ - Arquivo de output gerado: Resultados/Clarice/jogo/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 19, frees: 11, errors: 0 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogo / Caso 5:
+ - Arquivo de output gerado: Resultados/Clarice/jogo/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 19, frees: 11, errors: 0 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta jogo / Caso 6:
+ - Arquivo de output gerado: Resultados/Clarice/jogo/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 15, frees: 7, errors: 0 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta jogo (máximo 1.67) - 0 de 60 - 0% de 1.67: 0.
+ -----
+
+#######################################
+ALUNO: Clarice/output
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Clarice/output:
+ - Diretório Resultados/Clarice/output criado com sucesso!
+ - Diretório Resultados/Clarice/output/main criado com sucesso!
+ - Diretório Resultados/Clarice/output/completo criado com sucesso!
+ - Diretório Resultados/Clarice/output/jogada criado com sucesso!
+ - Diretório Resultados/Clarice/output/jogador criado com sucesso!
+ - Diretório Resultados/Clarice/output/tabuleiro criado com sucesso!
+ - Diretório Resultados/Clarice/output/jogo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Clarice/output/jogada.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/jogada.h' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/jogador.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/jogador.h' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/jogo.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/jogo.h' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/tabuleiro.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/tabuleiro.h' não encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/completo
+ - Pasta jogada:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/jogada
+ - Pasta jogador:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/jogador
+ - Pasta tabuleiro:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/tabuleiro
+ - Pasta jogo:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/jogo
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Erro de compilação! Verifique os arquivos da pasta main.
+ - Erro de compilação! Verifique os arquivos da pasta completo.
+ - Erro de compilação! Verifique os arquivos da pasta jogada.
+ - Erro de compilação! Verifique os arquivos da pasta jogador.
+ - Erro de compilação! Verifique os arquivos da pasta tabuleiro.
+ - Erro de compilação! Verifique os arquivos da pasta jogo.
+ - Arquivos Compilados: Erro!: 6 arquivos com erros de compilacao.
+
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/completo/result_linking.txt
+ - Pasta jogada:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogada/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/jogada/result_linking.txt
+ - Pasta jogador:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogador/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/jogador/result_linking.txt
+ - Pasta tabuleiro:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tabuleiro/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/tabuleiro/result_linking.txt
+ - Pasta jogo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/jogo/result_linking.txt
+ - Arquivos Linkados: Erro! 6 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 1.66) - 0 de 10 - 0% de 1.66: 0.
+ -----
+ - Pasta completo / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta completo (máximo 1.66) - 0 de 10 - 0% de 1.66: 0.
+ -----
+ - Pasta jogada / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta jogada (máximo 1.67) - 0 de 10 - 0% de 1.67: 0.
+ -----
+ - Pasta jogador / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta jogador (máximo 1.67) - 0 de 10 - 0% de 1.67: 0.
+ -----
+ - Pasta tabuleiro / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta tabuleiro (máximo 1.67) - 0 de 10 - 0% de 1.67: 0.
+ -----
+ - Pasta jogo / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta jogo (máximo 1.67) - 0 de 10 - 0% de 1.67: 0.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: Clarice
+ - Arquivos Esperados Corretos: 9 de 9
+ - Pastas Compiladas Corretamente: 6 de 6 
+ - Pastas Linkadas Corretamente: 4 de 6
+ - Teste main
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice para o teste main: 0
+ - Teste completo
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice para o teste completo: 0
+ - Teste jogada
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Clarice para o teste jogada: 1.67
+ - Teste jogador
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Clarice para o teste jogador: 0
+ - Teste tabuleiro
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Clarice para o teste tabuleiro: 1.67
+ - Teste jogo
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice para o teste jogo: 0
+ - Nota de Clarice: 0+(0)+(1.67)+(1.67)+(0)+(0)+(0)
+ - Nota de Clarice: 3.34
+
+----------------------------------------------------------------------------
+Aluno: Clarice/output
+ - Arquivos Esperados Corretos: 0 de 9
+ - Pastas Compiladas Corretamente: 0 de 6 
+ - Pastas Linkadas Corretamente: 0 de 6
+ - Teste main
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice/output para o teste main: 0
+ - Teste completo
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice/output para o teste completo: 0
+ - Teste jogada
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice/output para o teste jogada: 0
+ - Teste jogador
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice/output para o teste jogador: 0
+ - Teste tabuleiro
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice/output para o teste tabuleiro: 0
+ - Teste jogo
+ - Resultados corretos: 0 de 6
+ - Valgrinds corretos: 0 de 6
+ - Nota de Clarice/output para o teste jogo: 0
+ - Nota de Clarice/output: 0+(0)+(0)+(0)+(0)+(0)+(0)
+ - Nota de Clarice/output: 0
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+

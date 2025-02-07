@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 
 #define TAM_TABULEIRO 3
 #define PECA_1 1
@@ -16,7 +18,28 @@ typedef struct{
  * 
  * @return a estrutura do tipo tTabuleiro alocada.
  */
-tTabuleiro* CriaTabuleiro();
+tTabuleiro* CriaTabuleiro(){
+    tTabuleiro *t;
+    t = (tTabuleiro*) calloc(1, sizeof(tTabuleiro));
+
+    t->peca1 = 'X';
+    t->peca2 = '0';
+    t->pecaVazio = '-';
+
+    t->posicoes = (char**) calloc(TAM_TABULEIRO+1, sizeof(char*));
+
+    for(int i = 0; i < TAM_TABULEIRO; i++){
+        t->posicoes[i] = (char*) calloc(TAM_TABULEIRO+1, sizeof(char));
+    }
+
+    for(int j = 0; j < TAM_TABULEIRO; j++){
+        for(int i = 0; i < TAM_TABULEIRO; i++){
+            t->posicoes[j][i] = t->pecaVazio;
+        }
+    }
+
+    return t;
+}
 
 
 /**
@@ -24,7 +47,16 @@ tTabuleiro* CriaTabuleiro();
  * 
  * @param tabuleiro a estrutura do tipo tTabuleiro a ser liberada.
  */
-void DestroiTabuleiro(tTabuleiro* tabuleiro);
+void DestroiTabuleiro(tTabuleiro* tabuleiro){
+    if(tabuleiro != NULL){
+        for(int i = 0; i < TAM_TABULEIRO+1; i++){
+            free(tabuleiro->posicoes[i]);
+        }
+
+        free(tabuleiro->posicoes);
+        free(tabuleiro);
+    }
+}
 
 
 /**
@@ -35,7 +67,11 @@ void DestroiTabuleiro(tTabuleiro* tabuleiro);
  * @param x a coordenada X da posição.
  * @param y a coordenada Y da posição.
  */
-void MarcaPosicaoTabuleiro(tTabuleiro* tabuleiro, int peca, int x, int y);
+void MarcaPosicaoTabuleiro(tTabuleiro* tabuleiro, int peca, int x, int y){
+    if(peca == PECA_1) tabuleiro->posicoes[y][x] = tabuleiro->peca1;
+
+    else if(peca == PECA_2) tabuleiro->posicoes[y][x] = tabuleiro->peca2;
+}
 
 
 /**
@@ -45,7 +81,15 @@ void MarcaPosicaoTabuleiro(tTabuleiro* tabuleiro, int peca, int x, int y);
  * 
  * @return 1 se há alguma posição livre, 0 caso contrário.
  */
-int TemPosicaoLivreTabuleiro(tTabuleiro* tabuleiro);
+int TemPosicaoLivreTabuleiro(tTabuleiro* tabuleiro){
+    for(int j = 0; j < TAM_TABULEIRO; j++){
+        for(int i = 0; i < TAM_TABULEIRO; i++){
+            if(tabuleiro->posicoes[j][i] == tabuleiro->pecaVazio) return 1;
+        }
+    }
+
+    return 0;
+}
 
 
 /**
@@ -58,7 +102,17 @@ int TemPosicaoLivreTabuleiro(tTabuleiro* tabuleiro);
  * 
  * @return 1 se a posição está marcada com a peça do jogador, 0 caso contrário.
  */
-int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro* tabuleiro, int x, int y, int peca);
+int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro* tabuleiro, int x, int y, int peca){
+    if(peca == PECA_1){
+        if(tabuleiro->posicoes[y][x] == tabuleiro->peca1) return 1;
+    }
+
+    else{
+        if(tabuleiro->posicoes[y][x] == tabuleiro->peca2) return 1;
+    }
+
+    return 0;
+}
 
 
 /**
@@ -70,7 +124,10 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro* tabuleiro, int x, int y, int pec
  * 
  * @return 1 se a posição está livre, 0 caso contrário.
  */
-int EstaLivrePosicaoTabuleiro(tTabuleiro* tabuleiro, int x, int y);
+int EstaLivrePosicaoTabuleiro(tTabuleiro* tabuleiro, int x, int y){
+    if(tabuleiro->posicoes[y][x] == tabuleiro->pecaVazio) return 1;
+    else return 0;
+}
 
 
 /**
@@ -81,7 +138,10 @@ int EstaLivrePosicaoTabuleiro(tTabuleiro* tabuleiro, int x, int y);
  * 
  * @return 1 se a posição é válida, 0 caso contrário.
  */
-int EhPosicaoValidaTabuleiro(int x, int y);
+int EhPosicaoValidaTabuleiro(int x, int y){
+    if((x >= 0 && x < TAM_TABULEIRO) && (y >= 0 && y < TAM_TABULEIRO)) return 1;
+    return 0;
+}
 
 
 /**
@@ -89,4 +149,12 @@ int EhPosicaoValidaTabuleiro(int x, int y);
  * 
  * @param tabuleiro o tabuleiro atual.
  */
-void ImprimeTabuleiro(tTabuleiro* tabuleiro);
+void ImprimeTabuleiro(tTabuleiro* tabuleiro){
+    for(int j = 0; j < TAM_TABULEIRO; j++){
+        printf("    ");
+        for(int i = 0; i < TAM_TABULEIRO; i++){
+            printf("%c", tabuleiro->posicoes[j][i]);
+        }
+        printf("\n");
+    }
+}

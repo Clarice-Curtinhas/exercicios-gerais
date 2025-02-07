@@ -17,6 +17,8 @@ typedef struct{
 tJogada* CriaJogada(){
     tJogada *jogada;
 
+    jogada = (tJogada*) calloc(1, sizeof(tJogada));
+
     jogada->x = 0;
     jogada->y = 0;
     jogada->sucesso = 0;
@@ -41,11 +43,13 @@ void DestroiJogada(tJogada* jogada){
  * @param jogada a estrutura do tipo tJogada a ser preenchida.
  */
 void LeJogada(tJogada* jogada){
-    scanf("%d %d\n", &jogada->x, &jogada->y);
+    printf("Digite uma posicao (x e y): ");
 
-    if(jogada->x >= 0 && jogada->y <= 2){
+    if((scanf("%d %d\n", &jogada->x, &jogada->y)) == 2){
         jogada->sucesso = 1;
     }
+
+    printf("\n");
 }
 
 

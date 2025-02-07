@@ -1,48 +1,15 @@
-==11685== Memcheck, a memory error detector
-==11685== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==11685== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==11685== Command: Resultados/Clarice/jogada/prog Resultados/Clarice/jogada/Casos/1
-==11685== Parent PID: 11684
-==11685== 
-==11685== Use of uninitialised value of size 8
-==11685==    at 0x109215: CriaJogada (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109386: JogaJogador (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109960: ComecaJogo (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109B69: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685== 
-==11685== Invalid write of size 4
-==11685==    at 0x109215: CriaJogada (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109386: JogaJogador (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109960: ComecaJogo (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109B69: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==11685== 
-==11685== 
-==11685== Process terminating with default action of signal 11 (SIGSEGV)
-==11685==  Access not within mapped region at address 0x0
-==11685==    at 0x109215: CriaJogada (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109386: JogaJogador (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109960: ComecaJogo (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==    by 0x109B69: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/Clarice/jogada/prog)
-==11685==  If you believe this happened as a result of a stack
-==11685==  overflow in your program's main thread (unlikely but
-==11685==  possible), you can try to increase the size of the
-==11685==  main thread stack using the --main-stacksize= flag.
-==11685==  The main thread stack size used in this run was 8388608.
-==11685== 
-==11685== HEAP SUMMARY:
-==11685==     in use at exit: 81 bytes in 8 blocks
-==11685==   total heap usage: 8 allocs, 0 frees, 81 bytes allocated
-==11685== 
-==11685== LEAK SUMMARY:
-==11685==    definitely lost: 0 bytes in 0 blocks
-==11685==    indirectly lost: 0 bytes in 0 blocks
-==11685==      possibly lost: 0 bytes in 0 blocks
-==11685==    still reachable: 81 bytes in 8 blocks
-==11685==         suppressed: 0 bytes in 0 blocks
-==11685== Reachable blocks (those to which a pointer was found) are not shown.
-==11685== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==11685== 
-==11685== Use --track-origins=yes to see where uninitialised values come from
-==11685== For lists of detected and suppressed errors, rerun with: -s
-==11685== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==825082== Memcheck, a memory error detector
+==825082== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==825082== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==825082== Command: Resultados/Clarice/jogada/prog Resultados/Clarice/jogada/Casos/1
+==825082== Parent PID: 825081
+==825082== 
+==825082== 
+==825082== HEAP SUMMARY:
+==825082==     in use at exit: 0 bytes in 0 blocks
+==825082==   total heap usage: 79 allocs, 79 frees, 9,041 bytes allocated
+==825082== 
+==825082== All heap blocks were freed -- no leaks are possible
+==825082== 
+==825082== For lists of detected and suppressed errors, rerun with: -s
+==825082== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

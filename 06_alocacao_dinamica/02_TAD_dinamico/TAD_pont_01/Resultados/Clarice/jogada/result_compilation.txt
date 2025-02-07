@@ -1,4 +1,0 @@
-jogada.c: In function ‘CriaJogada’:
-jogada.c:20:15: warning: ‘jogada’ is used uninitialized [-Wuninitialized]
-   20 |     jogada->x = 0;
-      |     ~~~~~~~~~~^~~

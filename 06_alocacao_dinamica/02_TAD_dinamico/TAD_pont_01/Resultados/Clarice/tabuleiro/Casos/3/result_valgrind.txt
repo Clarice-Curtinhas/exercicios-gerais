@@ -1,0 +1,15 @@
+==826573== Memcheck, a memory error detector
+==826573== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==826573== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==826573== Command: Resultados/Clarice/tabuleiro/prog Resultados/Clarice/tabuleiro/Casos/3
+==826573== Parent PID: 826572
+==826573== 
+==826573== 
+==826573== HEAP SUMMARY:
+==826573==     in use at exit: 0 bytes in 0 blocks
+==826573==   total heap usage: 47 allocs, 47 frees, 8,720 bytes allocated
+==826573== 
+==826573== All heap blocks were freed -- no leaks are possible
+==826573== 
+==826573== For lists of detected and suppressed errors, rerun with: -s
+==826573== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
