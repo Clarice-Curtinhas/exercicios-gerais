@@ -1,0 +1,4 @@
+biblioteca.c: In function ‘RemoverLivroDaBiblioteca’:
+biblioteca.c:87:12: warning: implicit declaration of function ‘VerificaTituloDoLivroNaBiblioteca’ [-Wimplicit-function-declaration]
+   87 |         if(VerificaTituloDoLivroNaBiblioteca(biblioteca->livros[i], titulo) == 0){
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
