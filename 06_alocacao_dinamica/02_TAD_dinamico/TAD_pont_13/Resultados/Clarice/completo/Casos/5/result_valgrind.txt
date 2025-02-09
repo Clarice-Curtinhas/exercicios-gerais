@@ -1,27 +1,15 @@
-==73203== Memcheck, a memory error detector
-==73203== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==73203== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==73203== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/5
-==73203== Parent PID: 73202
-==73203== 
-==73203== 
-==73203== Process terminating with default action of signal 8 (SIGFPE)
-==73203==  Integer divide by zero at address 0x1002E9FA4B
-==73203==    at 0x109AF9: ImprimeRelatorioPad (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==73203==    by 0x10953C: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==73203== 
-==73203== HEAP SUMMARY:
-==73203==     in use at exit: 9,000 bytes in 3 blocks
-==73203==   total heap usage: 3 allocs, 0 frees, 9,000 bytes allocated
-==73203== 
-==73203== LEAK SUMMARY:
-==73203==    definitely lost: 0 bytes in 0 blocks
-==73203==    indirectly lost: 0 bytes in 0 blocks
-==73203==      possibly lost: 0 bytes in 0 blocks
-==73203==    still reachable: 9,000 bytes in 3 blocks
-==73203==         suppressed: 0 bytes in 0 blocks
-==73203== Reachable blocks (those to which a pointer was found) are not shown.
-==73203== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==73203== 
-==73203== For lists of detected and suppressed errors, rerun with: -s
-==73203== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1355464== Memcheck, a memory error detector
+==1355464== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1355464== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==1355464== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/5
+==1355464== Parent PID: 1355463
+==1355464== 
+==1355464== 
+==1355464== HEAP SUMMARY:
+==1355464==     in use at exit: 0 bytes in 0 blocks
+==1355464==   total heap usage: 3 allocs, 3 frees, 9,000 bytes allocated
+==1355464== 
+==1355464== All heap blocks were freed -- no leaks are possible
+==1355464== 
+==1355464== For lists of detected and suppressed errors, rerun with: -s
+==1355464== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

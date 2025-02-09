@@ -45,10 +45,11 @@ tPad* CriaPad(){
 void RodaPad(tPad *p){
     char cartao[TAM_CSUS];
     char opcao;
+    int lesaoExiste = 0;
 
-    scanf("%c\n", &opcao);
 
-    while(opcao != 'F'){
+    while((scanf("%c\n", &opcao)) == 1 && opcao != 'F'){
+
         if(opcao == 'P'){
             tPaciente *pac = CriaPaciente();
             LePaciente(pac);
@@ -60,18 +61,25 @@ void RodaPad(tPad *p){
         }
 
         else if(opcao == 'L'){
+            lesaoExiste = 0;
             scanf("%[^\n]\n", cartao);
             tLesao *l = CriaLesao();
             LeLesao(l);
             
             for(int i = 0; i < p->qtdpacientes; i++){
-                if(strcmp(cartao, GetCartaoSusPaciente(p->listapacientes[i]))){
+                if(strcmp(cartao, GetCartaoSusPaciente(p->listapacientes[i])) == 0){
                     AdicionaLesaoPaciente(p->listapacientes[i], l);
+                    lesaoExiste = 1;
                     break;
                 }
             }
+
+            if(lesaoExiste == 0){
+                LiberaLesao(l);
+            }
         }
-        scanf("%c\n", &opcao);
+
+        else break;
     }
 }
 
@@ -81,26 +89,39 @@ void RodaPad(tPad *p){
  * @param p Ponteiro para a estrutura de dados tPad contendo o PAD a ser impresso.
  */
 void ImprimeRelatorioPad(tPad *p){
-    int media = 0, totalLes = 0, totalCir = 0;
+    int media = 0, totalLes = 0, totalCir = 0, soma = 0;
 
-    printf("TOTAL PACIENTES: %d\n", p->qtdpacientes);
+    if(p != NULL){
+        printf("TOTAL PACIENTES: %d\n", p->qtdpacientes);
 
-    for(int i = 0; i < p->qtdpacientes; i++){
-        media += CalculaIdadeData(GetNascimentoPaciente(p->listapacientes[i]), CriaData(13, 4, 2023));
-        totalLes += GetQtdLesoesPaciente(p->listapacientes[i]);
-        totalCir += GetQtdCirurgiasPaciente(p->listapacientes[i]);
+        if(p->qtdpacientes != 0){
+            for(int i = 0; i < p->qtdpacientes; i++){
+                tData *dataHj;
+                dataHj = CriaData(DIA_PAD, MES_PAD, ANO_PAD);
+
+                soma += CalculaIdadeData(GetNascimentoPaciente(p->listapacientes[i]), dataHj);
+                totalLes += GetQtdLesoesPaciente(p->listapacientes[i]);
+                totalCir += GetQtdCirurgiasPaciente(p->listapacientes[i]);
+
+                LiberaData(dataHj);
+            }
+        }
+        
+        if(p->qtdpacientes != 0){
+            media = soma/p->qtdpacientes;
+        }
+
+        printf("MEDIA IDADE (ANOS): %d\n", media);
+        printf("TOTAL LESOES: %d\n", totalLes);
+        printf("TOTAL CIRURGIAS: %d\n", totalCir);
+        printf("LISTA DE PACIENTES:\n");
+
+        if(p->qtdpacientes != 0){
+            for(int i = 0; i < p->qtdpacientes; i++){
+                ImprimePaciente(p->listapacientes[i]);
+            }
+        }
     }
-
-    media = media/p->qtdpacientes;
-
-    printf("MEDIA IDADE (ANOS): %d\n", media);
-    printf("TOTAL LESOES: %d\n", totalLes);
-    printf("TOTAL CIRURGIAS: %d\n", totalCir);
-    printf("LISTA DE PACIENTES:\n");
-
-    for(int i = 0; i < p->qtdpacientes; i++){
-        ImprimePaciente(p->listapacientes[i]);
-    }    
 }
 
 /**
@@ -109,8 +130,11 @@ void ImprimeRelatorioPad(tPad *p){
  * @param p Ponteiro para a estrutura de dados tPad a ser liberada.
  */
 void LiberaPad(tPad *p){
-    for(int i = 0; i < p->qtdpacientes; i++){ 
-        free(p->listapacientes[i]);
+    if(p != NULL){
+        for(int i = 0; i < p->qtdpacientes; i++){ 
+            LiberaPaciente(p->listapacientes[i]);
+        }
+
+        free(p);
     }
-    free(p);
 }

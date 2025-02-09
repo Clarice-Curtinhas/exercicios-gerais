@@ -1,51 +1,15 @@
-==72954== Memcheck, a memory error detector
-==72954== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==72954== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==72954== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/4
-==72954== Parent PID: 72953
-==72954== 
-==72954== 
-==72954== HEAP SUMMARY:
-==72954==     in use at exit: 1,153 bytes in 23 blocks
-==72954==   total heap usage: 29 allocs, 6 frees, 10,297 bytes allocated
-==72954== 
-==72954== 36 bytes in 3 blocks are definitely lost in loss record 2 of 9
-==72954==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==72954==    by 0x109243: LeData (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x1096A7: LePaciente (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x10990B: RodaPad (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x109530: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954== 
-==72954== 36 bytes in 3 blocks are definitely lost in loss record 3 of 9
-==72954==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==72954==    by 0x10929C: CriaData (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x109A87: ImprimeRelatorioPad (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x10953C: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954== 
-==72954== 57 bytes in 3 blocks are definitely lost in loss record 4 of 9
-==72954==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==72954==    by 0x10962E: CriaPaciente (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x1098FB: RodaPad (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x109530: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954== 
-==72954== 300 bytes in 3 blocks are definitely lost in loss record 8 of 9
-==72954==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==72954==    by 0x109615: CriaPaciente (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x1098FB: RodaPad (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x109530: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954== 
-==72954== 724 (240 direct, 484 indirect) bytes in 3 blocks are definitely lost in loss record 9 of 9
-==72954==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==72954==    by 0x109648: CriaPaciente (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x1098FB: RodaPad (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954==    by 0x109530: main (in /home/ccurtinhassantos/Documents/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/Clarice/completo/prog)
-==72954== 
-==72954== LEAK SUMMARY:
-==72954==    definitely lost: 669 bytes in 15 blocks
-==72954==    indirectly lost: 484 bytes in 8 blocks
-==72954==      possibly lost: 0 bytes in 0 blocks
-==72954==    still reachable: 0 bytes in 0 blocks
-==72954==         suppressed: 0 bytes in 0 blocks
-==72954== 
-==72954== For lists of detected and suppressed errors, rerun with: -s
-==72954== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)
+==1355363== Memcheck, a memory error detector
+==1355363== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1355363== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==1355363== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/4
+==1355363== Parent PID: 1355362
+==1355363== 
+==1355363== 
+==1355363== HEAP SUMMARY:
+==1355363==     in use at exit: 0 bytes in 0 blocks
+==1355363==   total heap usage: 29 allocs, 29 frees, 10,297 bytes allocated
+==1355363== 
+==1355363== All heap blocks were freed -- no leaks are possible
+==1355363== 
+==1355363== For lists of detected and suppressed errors, rerun with: -s
+==1355363== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
