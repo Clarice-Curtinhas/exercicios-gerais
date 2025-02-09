@@ -1,0 +1,12 @@
+{
+	"alunos": [
+		{
+			"Nome":"Clarice",
+			"Nota":6.00
+		},
+		{
+			"Nome":"Clarice/output",
+			"Nota":0
+		}
+	]
+}
