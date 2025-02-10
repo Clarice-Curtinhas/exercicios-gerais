@@ -1,0 +1,11 @@
+filme.c: In function ‘LeFilme’:
+filme.c:46:12: warning: ‘return’ with a value, in function returning void [-Wreturn-type]
+   46 |     return filme;
+      |            ^~~~~
+filme.c:39:6: note: declared here
+   39 | void LeFilme(tFilme *filme, int codigo){
+      |      ^~~~~~~
+main.c: In function ‘main’:
+main.c:9:9: warning: unused variable ‘i’ [-Wunused-variable]
+    9 |     int i = 0;
+      |         ^
