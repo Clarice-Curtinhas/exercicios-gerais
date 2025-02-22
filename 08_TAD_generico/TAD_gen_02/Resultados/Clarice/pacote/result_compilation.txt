@@ -1,0 +1,11 @@
+pacote.c: In function ‘ImprimePacote’:
+pacote.c:94:5: warning: implicit declaration of function ‘CalculaSomaVerificacaoPacote’ [-Wimplicit-function-declaration]
+   94 |     CalculaSomaVerificacaoPacote(pac);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pacote.c: At top level:
+pacote.c:123:6: warning: conflicting types for ‘CalculaSomaVerificacaoPacote’; have ‘void(tPacote *)’ {aka ‘void(struct pacote *)’}
+  123 | void CalculaSomaVerificacaoPacote(tPacote* pac){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pacote.c:94:5: note: previous implicit declaration of ‘CalculaSomaVerificacaoPacote’ with type ‘void(tPacote *)’ {aka ‘void(struct pacote *)’}
+   94 |     CalculaSomaVerificacaoPacote(pac);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
