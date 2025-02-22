@@ -1,0 +1,10 @@
+main.c: In function ‘main’:
+main.c:11:10: warning: unused variable ‘mensagens’ [-Wunused-variable]
+   11 |     char mensagens[NUM_MAX_MSGS][TAM_MAX_MSG];
+      |          ^~~~~~~~~
+main.c:10:20: warning: unused variable ‘i’ [-Wunused-variable]
+   10 |     int qntMensag, i;
+      |                    ^
+main.c:10:9: warning: unused variable ‘qntMensag’ [-Wunused-variable]
+   10 |     int qntMensag, i;
+      |         ^~~~~~~~~

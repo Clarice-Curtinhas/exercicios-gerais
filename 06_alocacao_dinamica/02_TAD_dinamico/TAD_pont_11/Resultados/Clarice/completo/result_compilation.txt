@@ -1,0 +1,7 @@
+main.c: In function ‘NovaLoja’:
+main.c:47:16: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘float *’ [-Wformat=]
+   47 |     scanf("%d %d\n", &id, &aluguel);
+      |               ~^          ~~~~~~~~
+      |                |          |
+      |                int *      float *
+      |               %e

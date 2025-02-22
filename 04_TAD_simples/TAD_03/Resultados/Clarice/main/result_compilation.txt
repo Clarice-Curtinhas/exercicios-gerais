@@ -1,0 +1,10 @@
+main.c: In function ‘main’:
+main.c:14:12: warning: unused variable ‘filme’ [-Wunused-variable]
+   14 |     tFilme filme;
+      |            ^~~~~
+main.c:9:10: warning: unused variable ‘hashtag’ [-Wunused-variable]
+    9 |     char hashtag;
+      |          ^~~~~~~
+main.c:8:21: warning: unused variable ‘id’ [-Wunused-variable]
+    8 |     int acao, para, id;
+      |                     ^~

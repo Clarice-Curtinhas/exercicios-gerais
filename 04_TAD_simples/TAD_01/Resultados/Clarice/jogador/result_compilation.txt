@@ -1,0 +1,17 @@
+jogador.c: In function ‘JogaJogador’:
+jogador.c:41:5: error: unknown type name ‘tJogada’; did you mean ‘tJogador’?
+   41 |     tJogada jogada;
+      |     ^~~~~~~
+      |     tJogador
+jogador.c:47:18: warning: implicit declaration of function ‘LeJogada’ [-Wimplicit-function-declaration]
+   47 |         jogada = LeJogada();
+      |                  ^~~~~~~~
+jogador.c:49:12: warning: implicit declaration of function ‘FoiJogadaBemSucedida’ [-Wimplicit-function-declaration]
+   49 |         if(FoiJogadaBemSucedida(jogada) == 1){
+      |            ^~~~~~~~~~~~~~~~~~~~
+jogador.c:50:41: warning: implicit declaration of function ‘ObtemJogadaX’ [-Wimplicit-function-declaration]
+   50 |             if(EhPosicaoValidaTabuleiro(ObtemJogadaX(jogada), ObtemJogadaY(jogada)) == 1){
+      |                                         ^~~~~~~~~~~~
+jogador.c:50:63: warning: implicit declaration of function ‘ObtemJogadaY’ [-Wimplicit-function-declaration]
+   50 |             if(EhPosicaoValidaTabuleiro(ObtemJogadaX(jogada), ObtemJogadaY(jogada)) == 1){
+      |                                                               ^~~~~~~~~~~~

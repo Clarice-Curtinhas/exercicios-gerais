@@ -1,0 +1,7 @@
+main.c: In function ‘main’:
+main.c:20:9: warning: ‘qntFuncionarios’ may be used uninitialized [-Wmaybe-uninitialized]
+   20 |         printf("\n%d\n", qntFuncionarios);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c:8:22: note: ‘qntFuncionarios’ was declared here
+    8 |     int qntEmpresas, qntFuncionarios;
+      |                      ^~~~~~~~~~~~~~~

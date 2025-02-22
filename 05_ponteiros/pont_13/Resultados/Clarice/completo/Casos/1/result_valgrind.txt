@@ -1,0 +1,51 @@
+==120107== Memcheck, a memory error detector
+==120107== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==120107== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==120107== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/1
+==120107== Parent PID: 120106
+==120107== 
+==120107== Use of uninitialised value of size 8
+==120107==    at 0x48DA136: __vfscanf_internal (vfscanf-internal.c:1976)
+==120107==    by 0x48C9EB5: __isoc99_scanf (isoc99_scanf.c:30)
+==120107==    by 0x10924E: Mensagem (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==    by 0x10932D: RolaMsg (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==    by 0x109204: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107== 
+==120107== Invalid write of size 4
+==120107==    at 0x48DA136: __vfscanf_internal (vfscanf-internal.c:1976)
+==120107==    by 0x48C9EB5: __isoc99_scanf (isoc99_scanf.c:30)
+==120107==    by 0x10924E: Mensagem (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==    by 0x10932D: RolaMsg (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==    by 0x109204: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==120107== 
+==120107== 
+==120107== Process terminating with default action of signal 11 (SIGSEGV)
+==120107==  Access not within mapped region at address 0x0
+==120107==    at 0x48DA136: __vfscanf_internal (vfscanf-internal.c:1976)
+==120107==    by 0x48C9EB5: __isoc99_scanf (isoc99_scanf.c:30)
+==120107==    by 0x10924E: Mensagem (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==    by 0x10932D: RolaMsg (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==    by 0x109204: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/05_ponteiros/pont_13/Resultados/Clarice/completo/prog)
+==120107==  If you believe this happened as a result of a stack
+==120107==  overflow in your program's main thread (unlikely but
+==120107==  possible), you can try to increase the size of the
+==120107==  main thread stack using the --main-stacksize= flag.
+==120107==  The main thread stack size used in this run was 8388608.
+==120107== 
+==120107== HEAP SUMMARY:
+==120107==     in use at exit: 4,096 bytes in 1 blocks
+==120107==   total heap usage: 1 allocs, 0 frees, 4,096 bytes allocated
+==120107== 
+==120107== LEAK SUMMARY:
+==120107==    definitely lost: 0 bytes in 0 blocks
+==120107==    indirectly lost: 0 bytes in 0 blocks
+==120107==      possibly lost: 0 bytes in 0 blocks
+==120107==    still reachable: 4,096 bytes in 1 blocks
+==120107==         suppressed: 0 bytes in 0 blocks
+==120107== Reachable blocks (those to which a pointer was found) are not shown.
+==120107== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==120107== 
+==120107== Use --track-origins=yes to see where uninitialised values come from
+==120107== For lists of detected and suppressed errors, rerun with: -s
+==120107== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

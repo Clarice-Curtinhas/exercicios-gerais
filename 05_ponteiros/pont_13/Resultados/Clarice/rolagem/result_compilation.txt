@@ -1,0 +1,16 @@
+rolagem.c: In function ‘RolaMsg’:
+rolagem.c:24:12: warning: unused variable ‘tam’ [-Wunused-variable]
+   24 |     int i, tam = 0;
+      |            ^~~
+rolagem.c:23:32: warning: unused variable ‘rolar’ [-Wunused-variable]
+   23 |     int tempo = 0, *qntMensag, rolar = 0;
+      |                                ^~~~~
+rolagem.c:23:9: warning: unused variable ‘tempo’ [-Wunused-variable]
+   23 |     int tempo = 0, *qntMensag, rolar = 0;
+      |         ^~~~~
+rolagem.c:27:5: warning: ‘qntMensag’ is used uninitialized [-Wuninitialized]
+   27 |     FuncMsg(mensagem, qntMensag);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rolagem.c:23:21: note: ‘qntMensag’ was declared here
+   23 |     int tempo = 0, *qntMensag, rolar = 0;
+      |                     ^~~~~~~~~
