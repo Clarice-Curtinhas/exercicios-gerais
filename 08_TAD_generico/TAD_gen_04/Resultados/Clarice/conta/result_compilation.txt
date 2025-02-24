@@ -1,0 +1,37 @@
+conta.c: In function ‘CriaConta’:
+conta.c:20:19: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   20 |     c = (tConta*) calloc(1, sizeof(tConta));
+      |                   ^~~~~~
+conta.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    2 | #include "vector.h"
+  +++ |+#include <stdlib.h>
+    3 | 
+conta.c:20:19: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   20 |     c = (tConta*) calloc(1, sizeof(tConta));
+      |                   ^~~~~~
+conta.c:20:19: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+conta.c: In function ‘DestroiConta’:
+conta.c:31:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   31 |     free(((tConta*)conta)->nome);
+      |     ^~~~
+conta.c:31:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+conta.c:31:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+conta.c:31:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+conta.c: In function ‘LeConta’:
+conta.c:42:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   42 |     scanf("%d;", &conta->numConta);
+      |     ^~~~~
+conta.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "vector.h"
+  +++ |+#include <stdio.h>
+    3 | 
+conta.c:42:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   42 |     scanf("%d;", &conta->numConta);
+      |     ^~~~~
+conta.c:42:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+conta.c:44:31: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   44 |         conta->nome = (char*) realloc(conta->nome, (i+2 * sizeof(char)));
+      |                               ^~~~~~~
+conta.c:44:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+conta.c:44:31: warning: incompatible implicit declaration of built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+conta.c:44:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’

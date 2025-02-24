@@ -1,0 +1,125 @@
+agencia.c: In function ‘CriaAgencia’:
+agencia.c:21:27: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   21 |     agencia = (tAgencia*) calloc(1, sizeof(tAgencia));
+      |                           ^~~~~~
+agencia.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    2 | #include "conta.h"
+  +++ |+#include <stdlib.h>
+    3 | #include "vector.h"
+agencia.c:21:27: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   21 |     agencia = (tAgencia*) calloc(1, sizeof(tAgencia));
+      |                           ^~~~~~
+agencia.c:21:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+agencia.c: In function ‘DestroiAgencia’:
+agencia.c:35:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   35 |     free(((tAgencia*)agencia)->nome);
+      |     ^~~~
+agencia.c:35:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+agencia.c:35:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+agencia.c:35:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+agencia.c: In function ‘LeAgencia’:
+agencia.c:45:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   45 |     scanf("%d;", &agencia->num);
+      |     ^~~~~
+agencia.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "conta.h"
+  +++ |+#include <stdio.h>
+    3 | #include "vector.h"
+agencia.c:45:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   45 |     scanf("%d;", &agencia->num);
+      |     ^~~~~
+agencia.c:45:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+agencia.c:49:33: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   49 |         agencia->nome = (char*) realloc(agencia->nome, (i+1)*sizeof(char));
+      |                                 ^~~~~~~
+agencia.c:49:33: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+agencia.c:49:33: warning: incompatible implicit declaration of built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+agencia.c:49:33: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+agencia.c: In function ‘ImprimeDadosAgencia’:
+agencia.c:97:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   97 |     printf("    Nome: %s\n", agencia->nome);
+      |     ^~~~~~
+agencia.c:97:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+agencia.c:97:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+agencia.c:97:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+banco.c: In function ‘CriaBanco’:
+banco.c:25:23: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   25 |     banco = (tBanco*) calloc(1, sizeof(tBanco));
+      |                       ^~~~~~
+banco.c:8:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    7 | #include "agencia.h"
+  +++ |+#include <stdlib.h>
+    8 | #include "vector.h"
+banco.c:25:23: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   25 |     banco = (tBanco*) calloc(1, sizeof(tBanco));
+      |                       ^~~~~~
+banco.c:25:23: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+banco.c: In function ‘DestroiBanco’:
+banco.c:38:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   38 |     free(banco->nome);
+      |     ^~~~
+banco.c:38:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+banco.c:38:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+banco.c:38:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+banco.c: In function ‘LeBanco’:
+banco.c:49:12: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   49 |     while((scanf("%c", &banco->nome[i]) == 1) && (banco->nome[i] != '\n')){
+      |            ^~~~~
+banco.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    7 | #include "agencia.h"
+  +++ |+#include <stdio.h>
+    8 | #include "vector.h"
+banco.c:49:12: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   49 |     while((scanf("%c", &banco->nome[i]) == 1) && (banco->nome[i] != '\n')){
+      |            ^~~~~
+banco.c:49:12: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+banco.c:51:31: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   51 |         banco->nome = (char*) realloc(banco->nome, (i+2) * sizeof(char));
+      |                               ^~~~~~~
+banco.c:51:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+banco.c:51:31: warning: incompatible implicit declaration of built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+banco.c:51:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+banco.c: In function ‘ImprimeRelatorioBanco’:
+banco.c:88:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   88 |     printf("%s\n", banco->nome);
+      |     ^~~~~~
+banco.c:88:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+banco.c:88:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+banco.c:88:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+conta.c: In function ‘CriaConta’:
+conta.c:20:19: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   20 |     c = (tConta*) calloc(1, sizeof(tConta));
+      |                   ^~~~~~
+conta.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    2 | #include "vector.h"
+  +++ |+#include <stdlib.h>
+    3 | 
+conta.c:20:19: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   20 |     c = (tConta*) calloc(1, sizeof(tConta));
+      |                   ^~~~~~
+conta.c:20:19: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+conta.c: In function ‘DestroiConta’:
+conta.c:31:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   31 |     free(((tConta*)conta)->nome);
+      |     ^~~~
+conta.c:31:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+conta.c:31:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+conta.c:31:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+conta.c: In function ‘LeConta’:
+conta.c:42:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   42 |     scanf("%d;", &conta->numConta);
+      |     ^~~~~
+conta.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "vector.h"
+  +++ |+#include <stdio.h>
+    3 | 
+conta.c:42:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   42 |     scanf("%d;", &conta->numConta);
+      |     ^~~~~
+conta.c:42:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+conta.c:44:31: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   44 |         conta->nome = (char*) realloc(conta->nome, (i+2 * sizeof(char)));
+      |                               ^~~~~~~
+conta.c:44:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+conta.c:44:31: warning: incompatible implicit declaration of built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+conta.c:44:31: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
