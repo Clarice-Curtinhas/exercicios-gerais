@@ -1,0 +1,12 @@
+relatorio.c: In function ‘ImprimeRelatorio’:
+relatorio.c:44:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   44 |     printf("Media das notas: %.2f\n", mediaGeral);
+      |     ^~~~~~
+relatorio.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include "aluno.h"
+  +++ |+#include <stdio.h>
+    3 | 
+relatorio.c:44:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   44 |     printf("Media das notas: %.2f\n", mediaGeral);
+      |     ^~~~~~
+relatorio.c:44:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

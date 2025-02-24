@@ -1,0 +1,71 @@
+aluno.c: In function ‘CriaAluno’:
+aluno.c:18:23: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   18 |     aluno = (tAluno*) calloc(1, sizeof(tAluno));
+      |                       ^~~~~~
+aluno.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    2 | #include "vector.h"
+  +++ |+#include <stdlib.h>
+    3 | 
+aluno.c:18:23: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   18 |     aluno = (tAluno*) calloc(1, sizeof(tAluno));
+      |                       ^~~~~~
+aluno.c:18:23: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+aluno.c: In function ‘DestroiAluno’:
+aluno.c:30:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   30 |     free((tAluno*)aluno);
+      |     ^~~~
+aluno.c:30:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+aluno.c:30:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+aluno.c:30:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+aluno.c: In function ‘LeAluno’:
+aluno.c:40:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   40 |     scanf("%[^;];%c;%f\n", aluno->nome, &aluno->genero, &aluno->nota);
+      |     ^~~~~
+aluno.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "vector.h"
+  +++ |+#include <stdio.h>
+    3 | 
+aluno.c:40:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   40 |     scanf("%[^;];%c;%f\n", aluno->nome, &aluno->genero, &aluno->nota);
+      |     ^~~~~
+aluno.c:40:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+relatorio.c: In function ‘ImprimeRelatorio’:
+relatorio.c:44:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   44 |     printf("Media das notas: %.2f\n", mediaGeral);
+      |     ^~~~~~
+relatorio.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include "aluno.h"
+  +++ |+#include <stdio.h>
+    3 | 
+relatorio.c:44:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   44 |     printf("Media das notas: %.2f\n", mediaGeral);
+      |     ^~~~~~
+relatorio.c:44:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+vector.c: In function ‘VectorConstruct’:
+vector.c:20:21: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   20 |     vet = (Vector*) calloc(1, sizeof(Vector));
+      |                     ^~~~~~
+vector.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+vector.c:20:21: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   20 |     vet = (Vector*) calloc(1, sizeof(Vector));
+      |                     ^~~~~~
+vector.c:20:21: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+vector.c:21:16: warning: assignment to ‘void ***’ from incompatible pointer type ‘void **’ [-Wincompatible-pointer-types]
+   21 |     vet->vetor = (data_type*) calloc(1, sizeof(data_type*));
+      |                ^
+vector.c: In function ‘VectorPushBack’:
+vector.c:37:30: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   37 |     v->vetor = (data_type**) realloc(v->vetor, (v->tamAloc * sizeof(data_type*)));
+      |                              ^~~~~~~
+vector.c:37:30: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+vector.c:37:30: warning: incompatible implicit declaration of built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+vector.c:37:30: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+vector.c: In function ‘VectorDestroy’:
+vector.c:75:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   75 |     free(v->vetor);
+      |     ^~~~
+vector.c:75:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+vector.c:75:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+vector.c:75:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

@@ -1,0 +1,31 @@
+aluno.c: In function ‘CriaAluno’:
+aluno.c:18:23: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   18 |     aluno = (tAluno*) calloc(1, sizeof(tAluno));
+      |                       ^~~~~~
+aluno.c:3:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    2 | #include "vector.h"
+  +++ |+#include <stdlib.h>
+    3 | 
+aluno.c:18:23: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   18 |     aluno = (tAluno*) calloc(1, sizeof(tAluno));
+      |                       ^~~~~~
+aluno.c:18:23: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+aluno.c: In function ‘DestroiAluno’:
+aluno.c:30:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   30 |     free((tAluno*)aluno);
+      |     ^~~~
+aluno.c:30:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+aluno.c:30:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+aluno.c:30:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+aluno.c: In function ‘LeAluno’:
+aluno.c:40:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   40 |     scanf("%[^;];%c;%f\n", aluno->nome, &aluno->genero, &aluno->nota);
+      |     ^~~~~
+aluno.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "vector.h"
+  +++ |+#include <stdio.h>
+    3 | 
+aluno.c:40:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   40 |     scanf("%[^;];%c;%f\n", aluno->nome, &aluno->genero, &aluno->nota);
+      |     ^~~~~
+aluno.c:40:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
