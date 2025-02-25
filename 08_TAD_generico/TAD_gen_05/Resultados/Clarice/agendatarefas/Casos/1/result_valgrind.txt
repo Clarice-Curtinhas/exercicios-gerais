@@ -1,0 +1,35 @@
+==509694== Memcheck, a memory error detector
+==509694== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==509694== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==509694== Command: Resultados/Clarice/agendatarefas/prog Resultados/Clarice/agendatarefas/Casos/1
+==509694== Parent PID: 509693
+==509694== 
+==509694== 
+==509694== HEAP SUMMARY:
+==509694==     in use at exit: 95 bytes in 8 blocks
+==509694==   total heap usage: 10 allocs, 2 frees, 8,287 bytes allocated
+==509694== 
+==509694== 8 bytes in 1 blocks are definitely lost in loss record 1 of 4
+==509694==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==509694==    by 0x10956E: CriaTarefaMultiplicar (in /home/clarice/Documentos/Prog2/exercicios-gerais/08_TAD_generico/TAD_gen_05/Resultados/Clarice/agendatarefas/prog)
+==509694==    by 0x1093E4: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/08_TAD_generico/TAD_gen_05/Resultados/Clarice/agendatarefas/prog)
+==509694== 
+==509694== 8 bytes in 1 blocks are definitely lost in loss record 2 of 4
+==509694==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==509694==    by 0x109641: CriaTarefaSoma (in /home/clarice/Documentos/Prog2/exercicios-gerais/08_TAD_generico/TAD_gen_05/Resultados/Clarice/agendatarefas/prog)
+==509694==    by 0x10935F: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/08_TAD_generico/TAD_gen_05/Resultados/Clarice/agendatarefas/prog)
+==509694== 
+==509694== 79 (24 direct, 55 indirect) bytes in 3 blocks are definitely lost in loss record 4 of 4
+==509694==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==509694==    by 0x1094A9: CriaTarefaImprimir (in /home/clarice/Documentos/Prog2/exercicios-gerais/08_TAD_generico/TAD_gen_05/Resultados/Clarice/agendatarefas/prog)
+==509694==    by 0x1092DA: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/08_TAD_generico/TAD_gen_05/Resultados/Clarice/agendatarefas/prog)
+==509694== 
+==509694== LEAK SUMMARY:
+==509694==    definitely lost: 40 bytes in 5 blocks
+==509694==    indirectly lost: 55 bytes in 3 blocks
+==509694==      possibly lost: 0 bytes in 0 blocks
+==509694==    still reachable: 0 bytes in 0 blocks
+==509694==         suppressed: 0 bytes in 0 blocks
+==509694== 
+==509694== For lists of detected and suppressed errors, rerun with: -s
+==509694== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
