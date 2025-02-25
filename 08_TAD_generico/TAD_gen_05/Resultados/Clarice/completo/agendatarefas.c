@@ -4,7 +4,7 @@
 typedef void (*func_exec)(void*);
 typedef void (*func_destroi)(void*);
 
-typedef struct tarefa{
+typedef struct tTarefa{
     int prioridade;
     void *tarefa;
     func_exec executa;
@@ -13,7 +13,7 @@ typedef struct tarefa{
 
 typedef struct agendatarefas{
     int qntTarefas;
-    tTarefa *agendaTarefas;
+    tTarefa **agendaTarefas;
 } tAgendaTarefas;
 
 /**
@@ -24,14 +24,17 @@ typedef struct agendatarefas{
  * @return Um ponteiro para a agenda de tarefas
  */
 tAgendaTarefas* CriaAgendaDeTarefas(int numElem){
-    /*tAgendaTarefas *agenda;
+    tAgendaTarefas *agenda;
 
     agenda = (tAgendaTarefas*) calloc(1, sizeof(tAgendaTarefas));
 
     agenda->qntTarefas = numElem;
-    agenda->agendaTarefas = (tTarefa*) calloc(numElem, sizeof(tTarefa));
+    agenda->agendaTarefas = (tTarefa**) calloc(numElem, sizeof(tTarefa*));
+    for(int i = 0; i < numElem; i++){
+        agenda->agendaTarefas[i] = (tTarefa*) calloc(1, sizeof(tTarefa));
+    }
 
-    return agenda;*/
+    return agenda;
 }
 
 /**
@@ -40,8 +43,8 @@ tAgendaTarefas* CriaAgendaDeTarefas(int numElem){
  * @param tar - A agenda que terá seu conteúdo liberado/destruído
  */
 void DestroiAgendaDeTarefas(tAgendaTarefas* tar){
-    /*free(tar->agendaTarefas);
-    free(tar);*/
+    free(tar->agendaTarefas);
+    free(tar);
 }
 
 /**
@@ -55,16 +58,16 @@ void DestroiAgendaDeTarefas(tAgendaTarefas* tar){
  *
  */
 void CadastraTarefaNaAgenda(tAgendaTarefas* tar, int prioridade, void *tarefa, void (*executa)(void*), void (*destroi)(void*) ){
-    /*tar->agendaTarefas[tar->qntTarefas].destroi = destroi;
-    tar->agendaTarefas[tar->qntTarefas].executa = executa;
-    tar->agendaTarefas[tar->qntTarefas].tarefa = tarefa;
-    tar->agendaTarefas[tar->qntTarefas].prioridade = prioridade;*/
+    tar->agendaTarefas[tar->qntTarefas]->destroi = destroi;
+    tar->agendaTarefas[tar->qntTarefas]->executa = executa;
+    tar->agendaTarefas[tar->qntTarefas]->tarefa = tarefa;
+    tar->agendaTarefas[tar->qntTarefas]->prioridade = prioridade;
 }
 
 int ComparaTarefas(const void *a, const void *b){
-    /*if(((tTarefa*)a)->prioridade > ((tTarefa*)b)->prioridade) return 1;
+    if(((tTarefa*)a)->prioridade > ((tTarefa*)b)->prioridade) return 1;
     if(((tTarefa*)a)->prioridade < ((tTarefa*)b)->prioridade) return -1;
-    else return 0;*/
+    else return 0;
 }
 
 /**
@@ -74,10 +77,11 @@ int ComparaTarefas(const void *a, const void *b){
  *
  */
 void ExecutarTarefasDaAgenda(tAgendaTarefas* tar){
-    /*qsort(&tar->agendaTarefas, tar->qntTarefas, sizeof(tTarefa), ComparaTarefas);
+    qsort(&tar->agendaTarefas, tar->qntTarefas, sizeof(tTarefa), ComparaTarefas);
 
     for(int i = 0; i < tar->qntTarefas; i++){
-        tar->agendaTarefas[i].executa(tar->agendaTarefas[i].tarefa);
-        tar->agendaTarefas[i].destroi(tar->agendaTarefas[i].tarefa);
-    }*/
+        tar->agendaTarefas[i]->executa(tar->agendaTarefas[i]->tarefa);
+        tar->agendaTarefas[i]->destroi(tar->agendaTarefas[i]->tarefa);
+        free(tar->agendaTarefas[i]);
+    }
 }

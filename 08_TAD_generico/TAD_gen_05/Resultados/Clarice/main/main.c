@@ -6,14 +6,12 @@
 #include "tarefamultiplica.h"
 #include "tarefasoma.h"
 
-#define errada 'e'
-#define certa 'c'
-
 char *scanString();
 
 int main(){
-    int qntTarefas, prioridade, n1, n2;
-    char tarefa, entrada = certa;
+    int qntTarefas, prioridade;
+    float n1, n2;
+    char tarefa;
     tAgendaTarefas *agenda;
 
     printf("Digite o numero de tarefas:");
@@ -52,14 +50,13 @@ int main(){
         }
 
         else{
-            entrada = errada;
-            while((scanf("%c", &tarefa)) == 1);
-            break;
+            while((scanf("%c", &tarefa)) == 1 && (tarefa != '\n'));
+            printf("\nDigite um tipo de tarefa suportado (I/S/M))");
+            i--;
         }
     }
 
-    if(entrada == certa) ExecutarTarefasDaAgenda(agenda);
-    else printf("Digite um tipo de tarefa suportado (I/S/M))\n");
+    ExecutarTarefasDaAgenda(agenda);
     DestroiAgendaDeTarefas(agenda);
 
     return 0;
@@ -71,7 +68,7 @@ char *scanString(){
 
     string = (char*) calloc(1, sizeof(char));
 
-    while((scanf("%c", &string[k]) == 1) && (string != '\n')){
+    while((scanf("%c", &string[k]) == 1) && (string[k] != '\n')){
         k++;
         string = (char*) realloc(string, (k+1)*sizeof(char));
     }

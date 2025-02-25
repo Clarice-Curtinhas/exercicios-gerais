@@ -1,75 +1,51 @@
 Digite o numero de tarefas:
 Começando os trabalhos
--100 I Terminando os trabalhos
-7 S 14 1
-2 M 18 4
-12 S 9 3
-4 M 20 2
-3 S 11 7
-25 M 5 6
-8 S 17 8
-10 M 22 10
-13 S 1 12
-19 M 6 4
-15 S 2 19
-21 M 4 23
-7 S 12 13
-24 M 3 14
-5 S 19 5
-23 M 2 16
-9 S 9 10
-16 M 16 8
-6 S 4 18
-25 M 25 11
-14 S 1 13
-20 M 7 20
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-O resultado da soma de 1091116672.00 com 1077978112.00 eh: 2169094656.00
-O resultado da soma de 1079865472.00 com 1090928000.00 eh: 2170793472.00
-O resultado da soma de 1089785088.00 com 1075503488.00 eh: 2165288448.00
-O resultado da multiplicacao de 1067282624.00 com 1092479872.00 eh: 1165984802256453632.00
-O resultado da multiplicacao de 1077139200.00 com 1088673536.00 eh: 1172652927962054656.00
-O resultado da multiplicacao de 1073238528.00 com 1083787136.00 eh: 1163162081030045696.00
-O resultado da soma de 1085108352.00 com 1088757376.00 eh: 2173865728.00
-O resultado da soma de 1086891008.00 com 1084080768.00 eh: 2170971648.00
-O resultado da soma de 1081165696.00 com 1091127168.00 eh: 2172292864.00
-O resultado da soma de 1092322560.00 com 1088107264.00 eh: 2180429824.00
-O resultado da soma de 1074077312.00 com 1085569792.00 eh: 2159647232.00
-O resultado da soma de 1087981440.00 com 1079446016.00 eh: 2167427584.00
-O resultado da multiplicacao de 1082927360.00 com 1076635904.00 eh: 1165918419241926656.00
-O resultado da multiplicacao de 1092144384.00 com 1071728576.00 eh: 1170482354569871360.00
-O resultado da multiplicacao de 1078649216.00 com 1089407488.00 eh: 1175088483656531968.00
-O resultado da multiplicacao de 1074370944.00 com 1091861248.00 eh: 1173064007871889408.00
-O resultado da multiplicacao de 1090057728.00 com 1057803456.00 eh: 1153066777580666880.00
-O resultado da multiplicacao de 1055286912.00 com 1081039872.00 eh: 1140807222930964480.00
-O resultado da multiplicacao de 1064178816.00 com 1091640960.00 eh: 1161701242393591808.00
-O resultado da multiplicacao de 1074916224.00 com 1090770688.00 eh: 1172487176584167424.00
-O resultado da soma de 1089030016.00 com 1070638016.00 eh: 2159667968.00
-O resultado da soma de 1082486912.00 com 1090288384.00 eh: 2172775424.00
-O resultado da soma de 1084038784.00 com 1090582016.00 eh: 2174620672.00
-O resultado da soma de 1086995840.00 com 1082046592.00 eh: 2169042432.00
-O resultado da multiplicacao de 1085527808.00 com 1062668864.00 eh: 1153556610010841088.00
-O resultado da multiplicacao de 1091179648.00 com 1067785920.00 eh: 1165146287201320960.00
+O resultado da multiplicacao de 5.00 com 6.00 eh: 30.00
+O resultado da multiplicacao de 25.00 com 11.00 eh: 275.00
+O resultado da multiplicacao de 3.00 com 14.00 eh: 42.00
+O resultado da multiplicacao de 2.00 com 16.00 eh: 32.00
+O resultado da multiplicacao de 4.00 com 23.00 eh: 92.00
+O resultado da multiplicacao de 7.00 com 20.00 eh: 140.00
+O resultado da multiplicacao de 6.00 com 4.00 eh: 24.00
+O resultado da multiplicacao de 16.00 com 8.00 eh: 128.00
+O resultado da soma de 2.00 com 19.00 eh: 21.00
+O resultado da soma de 1.00 com 13.00 eh: 14.00
+O resultado da soma de 1.00 com 12.00 eh: 13.00
+O resultado da soma de 9.00 com 3.00 eh: 12.00
+O resultado da multiplicacao de 22.00 com 10.00 eh: 220.00
+O resultado da soma de 9.00 com 10.00 eh: 19.00
+O resultado da soma de 17.00 com 8.00 eh: 25.00
+O resultado da soma de 14.00 com 1.00 eh: 15.00
+O resultado da soma de 12.00 com 13.00 eh: 25.00
+O resultado da soma de 4.00 com 18.00 eh: 22.00
+O resultado da soma de 19.00 com 5.00 eh: 24.00
+O resultado da multiplicacao de 20.00 com 2.00 eh: 40.00
+O resultado da soma de 11.00 com 7.00 eh: 18.00
+O resultado da multiplicacao de 18.00 com 4.00 eh: 72.00
+O resultado da soma de 8.57 com 3.01 eh: 11.58
+O resultado da soma de 3.46 com 8.39 eh: 11.85
+O resultado da soma de 7.65 com 2.42 eh: 10.07
+O resultado da multiplicacao de 1.23 com 9.87 eh: 12.14
+O resultado da multiplicacao de 2.81 com 7.12 eh: 20.01
+O resultado da multiplicacao de 1.94 com 4.79 eh: 9.29
+O resultado da soma de 5.42 com 7.16 eh: 12.58
+O resultado da soma de 6.27 com 4.93 eh: 11.20
+O resultado da soma de 3.77 com 8.58 eh: 12.35
+O resultado da soma de 9.72 com 6.85 eh: 16.57
+O resultado da soma de 2.08 com 5.64 eh: 7.72
+O resultado da soma de 6.79 com 3.36 eh: 10.15
+O resultado da multiplicacao de 4.38 com 2.69 eh: 11.78
+O resultado da multiplicacao de 9.55 com 1.76 eh: 16.81
+O resultado da multiplicacao de 3.17 com 7.47 eh: 23.68
+O resultado da multiplicacao de 2.15 com 9.28 eh: 19.95
+O resultado da multiplicacao de 7.78 com 0.55 eh: 4.28
+O resultado da multiplicacao de 0.45 com 3.74 eh: 1.68
+O resultado da multiplicacao de 0.93 com 9.07 eh: 8.44
+O resultado da multiplicacao de 2.28 com 8.24 eh: 18.79
+O resultado da soma de 7.29 com 1.63 eh: 8.92
+O resultado da soma de 4.17 com 7.89 eh: 12.06
+O resultado da soma de 4.91 com 8.06 eh: 12.97
+O resultado da soma de 6.32 com 3.98 eh: 10.30
+O resultado da multiplicacao de 5.62 com 0.84 eh: 4.72
+O resultado da multiplicacao de 8.63 com 1.29 eh: 11.13
+Terminando os trabalhos
