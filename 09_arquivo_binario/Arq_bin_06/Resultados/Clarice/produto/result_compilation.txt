@@ -1,0 +1,19 @@
+produto.c: In function ‘CriaProduto’:
+produto.c:28:21: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   28 |     p = (tProduto*) calloc(1, sizeof(tProduto));
+      |                     ^~~~~~
+produto.c:4:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    3 | #include <string.h>
+  +++ |+#include <stdlib.h>
+    4 | 
+produto.c:28:21: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   28 |     p = (tProduto*) calloc(1, sizeof(tProduto));
+      |                     ^~~~~~
+produto.c:28:21: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+produto.c: In function ‘DestroiProduto’:
+produto.c:43:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   43 |     free(produto);
+      |     ^~~~
+produto.c:43:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+produto.c:43:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+produto.c:43:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
