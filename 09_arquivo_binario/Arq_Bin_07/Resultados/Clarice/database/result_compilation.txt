@@ -1,0 +1,222 @@
+database.c: In function ‘CriaDatabase’:
+database.c:23:17: warning: assignment to ‘tAluno **’ {aka ‘struct Aluno **’} from incompatible pointer type ‘Vector *’ [-Wincompatible-pointer-types]
+   23 |     data->aluno = VectorConstruct();
+      |                 ^
+database.c:24:16: warning: assignment to ‘tProfessor **’ {aka ‘struct Professor **’} from incompatible pointer type ‘Vector *’ [-Wincompatible-pointer-types]
+   24 |     data->prof = VectorConstruct();
+      |                ^
+database.c: In function ‘DestroiDatabase’:
+database.c:34:21: warning: passing argument 1 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   34 |     VectorDestroy(db->aluno, DestroiAluno);
+      |                   ~~^~~~~~~
+      |                     |
+      |                     tAluno ** {aka struct Aluno **}
+In file included from database.c:7:
+vector.h:64:28: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   64 | void VectorDestroy(Vector *v, void (*destroy)(DataType));
+      |                    ~~~~~~~~^
+database.c:34:30: warning: passing argument 2 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   34 |     VectorDestroy(db->aluno, DestroiAluno);
+      |                              ^~~~~~~~~~~~
+      |                              |
+      |                              void (*)(tAluno *) {aka void (*)(struct Aluno *)}
+vector.h:64:38: note: expected ‘void (*)(void *)’ but argument is of type ‘void (*)(tAluno *)’ {aka ‘void (*)(struct Aluno *)’}
+   64 | void VectorDestroy(Vector *v, void (*destroy)(DataType));
+      |                               ~~~~~~~^~~~~~~~~~~~~~~~~~
+database.c:35:21: warning: passing argument 1 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   35 |     VectorDestroy(db->prof, DestroiProfessor);
+      |                   ~~^~~~~~
+      |                     |
+      |                     tProfessor ** {aka struct Professor **}
+vector.h:64:28: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   64 | void VectorDestroy(Vector *v, void (*destroy)(DataType));
+      |                    ~~~~~~~~^
+database.c:35:29: warning: passing argument 2 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   35 |     VectorDestroy(db->prof, DestroiProfessor);
+      |                             ^~~~~~~~~~~~~~~~
+      |                             |
+      |                             void (*)(tProfessor *) {aka void (*)(struct Professor *)}
+vector.h:64:38: note: expected ‘void (*)(void *)’ but argument is of type ‘void (*)(tProfessor *)’ {aka ‘void (*)(struct Professor *)’}
+   64 | void VectorDestroy(Vector *v, void (*destroy)(DataType));
+      |                               ~~~~~~~^~~~~~~~~~~~~~~~~~
+database.c: In function ‘LeDatabase’:
+database.c:54:26: warning: passing argument 1 of ‘VectorPushBack’ from incompatible pointer type [-Wincompatible-pointer-types]
+   54 |         VectorPushBack(db->aluno, a);
+      |                        ~~^~~~~~~
+      |                          |
+      |                          tAluno ** {aka struct Aluno **}
+vector.h:21:29: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   21 | void VectorPushBack(Vector *v, DataType val);
+      |                     ~~~~~~~~^
+database.c:64:26: warning: passing argument 1 of ‘VectorPushBack’ from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |         VectorPushBack(db->prof, p);
+      |                        ~~^~~~~~
+      |                          |
+      |                          tProfessor ** {aka struct Professor **}
+vector.h:21:29: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   21 | void VectorPushBack(Vector *v, DataType val);
+      |                     ~~~~~~~~^
+database.c: In function ‘OrdenaDatabase’:
+database.c:73:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+   73 |     for(int i = 0; i < VectorSize(db->aluno); i++){
+      |                                   ~~^~~~~~~
+      |                                     |
+      |                                     tAluno ** {aka struct Aluno **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:74:41: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+   74 |         if(ComparaNomeAluno(VectorGet(db->aluno, i), VectorGet(db->aluno, i+1)) == -1){
+      |                                       ~~^~~~~~~
+      |                                         |
+      |                                         tAluno ** {aka struct Aluno **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c:74:66: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+   74 |         if(ComparaNomeAluno(VectorGet(db->aluno, i), VectorGet(db->aluno, i+1)) == -1){
+      |                                                                ~~^~~~~~~
+      |                                                                  |
+      |                                                                  tAluno ** {aka struct Aluno **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c:75:26: warning: passing argument 1 of ‘VectorSwap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   75 |             VectorSwap(db->aluno, i, i+1);
+      |                        ~~^~~~~~~
+      |                          |
+      |                          tAluno ** {aka struct Aluno **}
+vector.h:56:25: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   56 | void VectorSwap(Vector *v, int i, int j);
+      |                 ~~~~~~~~^
+database.c:79:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+   79 |     for(int i = 0; i < VectorSize(db->prof); i++){
+      |                                   ~~^~~~~~
+      |                                     |
+      |                                     tProfessor ** {aka struct Professor **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:80:45: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+   80 |         if(ComparaNomeProfessor(VectorGet(db->prof, i), VectorGet(db->prof, i+1)) == -1){
+      |                                           ~~^~~~~~
+      |                                             |
+      |                                             tProfessor ** {aka struct Professor **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c:80:69: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+   80 |         if(ComparaNomeProfessor(VectorGet(db->prof, i), VectorGet(db->prof, i+1)) == -1){
+      |                                                                   ~~^~~~~~
+      |                                                                     |
+      |                                                                     tProfessor ** {aka struct Professor **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c:81:26: warning: passing argument 1 of ‘VectorSwap’ from incompatible pointer type [-Wincompatible-pointer-types]
+   81 |             VectorSwap(db->prof, i, i+1);
+      |                        ~~^~~~~~
+      |                          |
+      |                          tProfessor ** {aka struct Professor **}
+vector.h:56:25: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   56 | void VectorSwap(Vector *v, int i, int j);
+      |                 ~~~~~~~~^
+database.c: In function ‘SalvarDatabase’:
+database.c:95:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |     for(int i = 0; i < VectorSize(db->aluno); i++){
+      |                                   ~~^~~~~~~
+      |                                     |
+      |                                     tAluno ** {aka struct Aluno **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:96:44: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+   96 |         numBytes += SalvaAluno(VectorGet(db->aluno, i), file);
+      |                                          ~~^~~~~~~
+      |                                            |
+      |                                            tAluno ** {aka struct Aluno **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c:99:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+   99 |     for(int i = 0; i < VectorSize(db->prof); i++){
+      |                                   ~~^~~~~~
+      |                                     |
+      |                                     tProfessor ** {aka struct Professor **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:100:48: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |         numBytes += SalvaProfessor(VectorGet(db->prof, i), file);
+      |                                              ~~^~~~~~
+      |                                                |
+      |                                                tProfessor ** {aka struct Professor **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c: In function ‘CarregaDatabase’:
+database.c:115:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |     for(int i = 0; i < VectorSize(db->aluno); i++){
+      |                                   ~~^~~~~~~
+      |                                     |
+      |                                     tAluno ** {aka struct Aluno **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:116:46: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  116 |         numBytes += CarregaAluno(VectorGet(db->aluno, i), file);
+      |                                            ~~^~~~~~~
+      |                                              |
+      |                                              tAluno ** {aka struct Aluno **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c:119:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  119 |     for(int i = 0; i < VectorSize(db->prof); i++){
+      |                                   ~~^~~~~~
+      |                                     |
+      |                                     tProfessor ** {aka struct Professor **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:120:50: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  120 |         numBytes += CarregaProfessor(VectorGet(db->prof, i), file);
+      |                                                ~~^~~~~~
+      |                                                  |
+      |                                                  tProfessor ** {aka struct Professor **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c: In function ‘ImprimeDatabase’:
+database.c:131:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  131 |     for(int i = 0; i < VectorSize(db->aluno); i++){
+      |                                   ~~^~~~~~~
+      |                                     |
+      |                                     tAluno ** {aka struct Aluno **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:132:38: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  132 |         ImprimeNomeAluno(VectorGet(db->aluno, i));
+      |                                    ~~^~~~~~~
+      |                                      |
+      |                                      tAluno ** {aka struct Aluno **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+database.c:135:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  135 |     for(int i = 0; i < VectorSize(db->prof); i++){
+      |                                   ~~^~~~~~
+      |                                     |
+      |                                     tProfessor ** {aka struct Professor **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+database.c:136:42: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  136 |         ImprimeNomeProfessor(VectorGet(db->prof, i));
+      |                                        ~~^~~~~~
+      |                                          |
+      |                                          tProfessor ** {aka struct Professor **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^

@@ -1,0 +1,14 @@
+/usr/bin/ld: Resultados/Clarice/professor/database.o: na função "DestroiDatabase":
+database.c:(.text+0x9e): undefined reference to `DestroiProfessor'
+/usr/bin/ld: Resultados/Clarice/professor/database.o: na função "LeDatabase":
+database.c:(.text+0x167): undefined reference to `LeProfessor'
+/usr/bin/ld: Resultados/Clarice/professor/database.o: na função "OrdenaDatabase":
+database.c:(.text+0x2ba): undefined reference to `ComparaNomeProfessor'
+/usr/bin/ld: Resultados/Clarice/professor/database.o: na função "SalvarDatabase":
+database.c:(.text+0x425): undefined reference to `SalvaProfessor'
+/usr/bin/ld: Resultados/Clarice/professor/database.o: na função "CarregaDatabase":
+database.c:(.text+0x575): undefined reference to `CriaProfessor'
+/usr/bin/ld: database.c:(.text+0x58c): undefined reference to `CarregaProfessor'
+/usr/bin/ld: Resultados/Clarice/professor/database.o: na função "ImprimeDatabase":
+database.c:(.text+0x66c): undefined reference to `ImprimeNomeProfessor'
+collect2: error: ld returned 1 exit status

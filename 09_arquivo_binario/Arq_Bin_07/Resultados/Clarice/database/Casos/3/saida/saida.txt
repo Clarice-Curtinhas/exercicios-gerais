@@ -1,0 +1,1 @@
+Error: vector_get: invalid index 6 for vector with size 6.

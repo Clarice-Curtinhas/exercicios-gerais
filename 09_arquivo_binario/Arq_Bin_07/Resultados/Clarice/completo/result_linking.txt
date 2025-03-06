@@ -1,0 +1,15 @@
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: na função "_start":
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: Resultados/Clarice/completo/database.o: na função "DestroiDatabase":
+database.c:(.text+0x7c): undefined reference to `DestroiProfessor'
+/usr/bin/ld: Resultados/Clarice/completo/database.o: na função "LeDatabase":
+database.c:(.text+0x137): undefined reference to `LeProfessor'
+/usr/bin/ld: Resultados/Clarice/completo/database.o: na função "OrdenaDatabase":
+database.c:(.text+0x243): undefined reference to `ComparaNomeProfessor'
+/usr/bin/ld: Resultados/Clarice/completo/database.o: na função "SalvarDatabase":
+database.c:(.text+0x319): undefined reference to `SalvaProfessor'
+/usr/bin/ld: Resultados/Clarice/completo/database.o: na função "CarregaDatabase":
+database.c:(.text+0x3cf): undefined reference to `CarregaProfessor'
+/usr/bin/ld: Resultados/Clarice/completo/database.o: na função "ImprimeDatabase":
+database.c:(.text+0x463): undefined reference to `ImprimeNomeProfessor'
+collect2: error: ld returned 1 exit status
