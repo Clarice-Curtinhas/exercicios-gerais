@@ -1,0 +1,8 @@
+aluno.c: In function ‘SalvaAlunosBinario’:
+aluno.c:64:10: warning: unused variable ‘c’ [-Wunused-variable]
+   64 |     char c = '\0';
+      |          ^
+aluno.c: In function ‘CarregaAlunosBinario’:
+aluno.c:103:18: warning: unused variable ‘i’ [-Wunused-variable]
+  103 |     int porcent, i = 0, tam, numeroAlunos;
+      |                  ^

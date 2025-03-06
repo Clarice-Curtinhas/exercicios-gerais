@@ -11,11 +11,11 @@ typedef struct aluno{
 } Aluno;
 
 Aluno** CriaVetorAlunos(int numeroAlunos){
-    Aluno **divos;
+    Aluno **alunos;
 
-    divos = (Aluno**) calloc(numeroAlunos, sizeof(Aluno*));
+    alunos = (Aluno**) calloc(numeroAlunos, sizeof(Aluno*));
 
-    return divos;
+    return alunos;
 }
 
 Aluno* CriaAluno(char *nome, char *dtNasc, char *cursoUfes, char* periodoIngresso, int percConclusao, float CRA){
@@ -68,23 +68,26 @@ void SalvaAlunosBinario(Aluno **alunos, char *fileName, int numeroAlunos){
     arq = fopen(fileName, "wb");
 
     if(arq != NULL){
+        qntBytes += fwrite(&numeroAlunos, sizeof(int), 1, arq);
         for(int i = 0; i < numeroAlunos; i++){
-            tam = strlen(alunos[i]->nome);
+            //qntBytes += fwrite(alunos[i], sizeof(Aluno), 1, arq);
+
+            tam = strlen(alunos[i]->nome)+1;
+            qntBytes += fwrite(&tam, sizeof(int), 1, arq);
             qntBytes += fwrite(&alunos[i]->nome, sizeof(char), tam, arq);
-            fwrite(&c, sizeof(char), 1, arq);
 
-            tam = strlen(alunos[i]->dataDeNasc);
+            tam = strlen(alunos[i]->dataDeNasc)+1;
+            qntBytes += fwrite(&tam, sizeof(int), 1, arq);
             qntBytes += fwrite(&alunos[i]->dataDeNasc, sizeof(char), tam, arq);
-            fwrite(&c, sizeof(char), 1, arq);
 
-            tam = strlen(alunos[i]->curso);
+            tam = strlen(alunos[i]->curso)+1;
+            qntBytes += fwrite(&tam, sizeof(int), 1, arq);
             qntBytes += fwrite(&alunos[i]->curso, sizeof(char), tam, arq);
-            fwrite(&c, sizeof(char), 1, arq);
 
-            tam = strlen(alunos[i]->periodo);
+            tam = strlen(alunos[i]->periodo)+1;
+            qntBytes += fwrite(&tam, sizeof(int), 1, arq);
             qntBytes += fwrite(&alunos[i]->periodo, sizeof(char), tam, arq);
-            fwrite(&c, sizeof(char), 1, arq);
-            
+
             qntBytes += fwrite(&alunos[i]->porcentConcl, sizeof(int), 1, arq);
             qntBytes += fwrite(&alunos[i]->cra, sizeof(float), 1, arq);
         }
@@ -97,33 +100,37 @@ void SalvaAlunosBinario(Aluno **alunos, char *fileName, int numeroAlunos){
 
 void CarregaAlunosBinario(Aluno **alunos, char *fileName){
     char nome[TAM_STRING], data[TAM_STRING], curso[TAM_STRING], period[TAM_STRING];
-    int porcent, i = 0;
+    int porcent, i = 0, tam, numeroAlunos;
     float cra;
 
     FILE *arq;
 
-    nome[0] = '\0';
-    data[0] = '\0';
-    curso[0] = '\0';
-    period[0] = '\0';
-
     arq = fopen(fileName, "rb");
 
     if(arq != NULL){
-        while(1){
+        fread(&numeroAlunos, sizeof(int), 1, arq);
+
+        for(int i = 0; i < numeroAlunos; i++){
             Aluno *a;
 
-            fread(&nome, sizeof(char), TAM_STRING, arq);
-            fread(&data, sizeof(char), TAM_STRING, arq);
-            fread(&curso, sizeof(char), TAM_STRING, arq);
-            fread(&period, sizeof(char), TAM_STRING, arq);
+            fread(&tam, sizeof(int), 1, arq);
+            fread(&nome, sizeof(char), tam, arq);
+
+            fread(&tam, sizeof(int), 1, arq);
+            fread(&data, sizeof(char), tam, arq);
+
+            fread(&tam, sizeof(int), 1, arq);
+            fread(&curso, sizeof(char), tam, arq);
+
+            fread(&tam, sizeof(int), 1, arq);
+            fread(&period, sizeof(char), tam, arq);
+
             fread(&porcent, sizeof(int), 1, arq);
             fread(&cra, sizeof(float), 1, arq);
 
             a = CriaAluno(nome, data, curso, period, porcent, cra);
 
             alunos[i] = a;
-            i++;
         }
     }
 
@@ -132,7 +139,7 @@ void CarregaAlunosBinario(Aluno **alunos, char *fileName){
 
 void ImprimeAlunos(Aluno** alunos, int numeroAlunos){
     for(int i = 0; i < numeroAlunos; i++){
-        printf("Aluno %d:", i);
+        printf("Aluno %d:\n", i);
         printf("Nome: %s\n", alunos[i]->nome);
         printf("Data Nascimento: %s\n", alunos[i]->dataDeNasc);
         printf("Curso: %s\n", alunos[i]->curso);
