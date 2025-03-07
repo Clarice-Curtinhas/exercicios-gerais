@@ -1,18 +1,22 @@
-рс€ю
-Leticia
-Lucas
-Carolina
-Andre
-Juliana
-Numero de bytes salvos: 468770306
-Numero de bytes lidos: 468837986
+Numero de bytes salvos: 2046
+Numero de bytes lidos: 2052
 
 Alunos:
-
-
-
-
-
-
+Andre
+Carolina
+Juliana
+Leticia
+Lucas
+Victor
 
 Professores:
+Adriano
+Alexandre
+Anderson
+Beatriz
+Camila
+Larissa
+Luiz
+Patricia
+Renata
+Roberto

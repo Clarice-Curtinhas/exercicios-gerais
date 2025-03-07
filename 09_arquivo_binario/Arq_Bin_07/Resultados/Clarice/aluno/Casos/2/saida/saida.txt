@@ -1,16 +1,18 @@
-рс€ю
-Joao
-Ana
-Pedro
-Camila
-Numero de bytes salvos: 390641362
-Numero de bytes lidos: 390696642
+Numero de bytes salvos: 1556
+Numero de bytes lidos: 1561
 
 Alunos:
-
-
-
-
-
+Ana
+Camila
+Joao
+Pedro
+Rafael
 
 Professores:
+Carlos
+Fernando
+Gustavo
+Isabela
+Juliano
+Patricia
+Vanessa

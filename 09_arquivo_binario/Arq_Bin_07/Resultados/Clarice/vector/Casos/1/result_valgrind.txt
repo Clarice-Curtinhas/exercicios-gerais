@@ -1,51 +1,15 @@
-==296993== Memcheck, a memory error detector
-==296993== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==296993== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==296993== Command: Resultados/Clarice/vector/prog Resultados/Clarice/vector/Casos/1
-==296993== Parent PID: 296992
-==296993== 
-==296993== Invalid read of size 4
-==296993==    at 0x10A236: VectorPushBack (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x1097FB: LeDatabase (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x109D8F: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==  Address 0x8 is not stack'd, malloc'd or (recently) free'd
-==296993== 
-==296993== 
-==296993== Process terminating with default action of signal 11 (SIGSEGV)
-==296993==  Access not within mapped region at address 0x8
-==296993==    at 0x10A236: VectorPushBack (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x1097FB: LeDatabase (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x109D8F: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==  If you believe this happened as a result of a stack
-==296993==  overflow in your program's main thread (unlikely but
-==296993==  possible), you can try to increase the size of the
-==296993==  main thread stack using the --main-stacksize= flag.
-==296993==  The main thread stack size used in this run was 8388608.
-==296993== 
-==296993== HEAP SUMMARY:
-==296993==     in use at exit: 4,280 bytes in 7 blocks
-==296993==   total heap usage: 7 allocs, 0 frees, 4,280 bytes allocated
-==296993== 
-==296993== 24 (16 direct, 8 indirect) bytes in 1 blocks are definitely lost in loss record 4 of 7
-==296993==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==296993==    by 0x10A1E3: VectorConstruct (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x109715: CriaDatabase (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x109D7F: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993== 
-==296993== 24 (16 direct, 8 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 7
-==296993==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==296993==    by 0x10A1E3: VectorConstruct (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x109726: CriaDatabase (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993==    by 0x109D7F: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/vector/prog)
-==296993== 
-==296993== LEAK SUMMARY:
-==296993==    definitely lost: 32 bytes in 2 blocks
-==296993==    indirectly lost: 16 bytes in 2 blocks
-==296993==      possibly lost: 0 bytes in 0 blocks
-==296993==    still reachable: 4,232 bytes in 3 blocks
-==296993==         suppressed: 0 bytes in 0 blocks
-==296993== Reachable blocks (those to which a pointer was found) are not shown.
-==296993== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==296993== 
-==296993== For lists of detected and suppressed errors, rerun with: -s
-==296993== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==385217== Memcheck, a memory error detector
+==385217== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==385217== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==385217== Command: Resultados/Clarice/vector/prog Resultados/Clarice/vector/Casos/1
+==385217== Parent PID: 385216
+==385217== 
+==385217== 
+==385217== HEAP SUMMARY:
+==385217==     in use at exit: 0 bytes in 0 blocks
+==385217==   total heap usage: 48 allocs, 48 frees, 19,920 bytes allocated
+==385217== 
+==385217== All heap blocks were freed -- no leaks are possible
+==385217== 
+==385217== For lists of detected and suppressed errors, rerun with: -s
+==385217== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

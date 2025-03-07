@@ -1,1 +1,25 @@
-valgrind: Resultados/Clarice/completo/prog: No such file or directory
+Patricia
+
+Alexandre
+
+Anderson
+
+Renata
+
+Adriano
+
+Camila
+
+Roberto
+
+Larissa
+
+Luiz
+
+Beatriz
+
+Numero de bytes salvos: 2454
+Numero de bytes lidos: 0
+
+Alunos:
+Professores:

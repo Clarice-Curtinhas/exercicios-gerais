@@ -1,0 +1,30 @@
+==383376== Memcheck, a memory error detector
+==383376== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==383376== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==383376== Command: Resultados/Clarice/completo/prog Resultados/Clarice/completo/Casos/1
+==383376== Parent PID: 383375
+==383376== 
+==383376== Invalid read of size 1
+==383376==    at 0x4853958: mempcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==383376==    by 0x48FEA3F: _IO_new_file_xsputn (fileops.c:1236)
+==383376==    by 0x48FEA3F: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+==383376==    by 0x48F1A11: fwrite (iofwrite.c:39)
+==383376==    by 0x10A038: SalvaProfessor (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/completo/prog)
+==383376==    by 0x109AC5: SalvarDatabase (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/completo/prog)
+==383376==    by 0x109CCA: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/completo/prog)
+==383376==  Address 0x4a81926 is 0 bytes after a block of size 150 alloc'd
+==383376==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==383376==    by 0x109DD3: CriaProfessor (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/completo/prog)
+==383376==    by 0x109EC9: LeProfessor (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/completo/prog)
+==383376==    by 0x1098DD: LeDatabase (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/completo/prog)
+==383376==    by 0x109C82: main (in /home/clarice/Documentos/Prog2/exercicios-gerais/09_arquivo_binario/Arq_Bin_07/Resultados/Clarice/completo/prog)
+==383376== 
+==383376== 
+==383376== HEAP SUMMARY:
+==383376==     in use at exit: 0 bytes in 0 blocks
+==383376==   total heap usage: 31 allocs, 31 frees, 14,906 bytes allocated
+==383376== 
+==383376== All heap blocks were freed -- no leaks are possible
+==383376== 
+==383376== For lists of detected and suppressed errors, rerun with: -s
+==383376== ERROR SUMMARY: 3 errors from 1 contexts (suppressed: 0 from 0)

@@ -24,7 +24,7 @@ Vector *VectorConstruct(){
     v->aloc = 1;
     v->qnt = 0;
 
-    return 0;
+    return v;
 }
 
 /**
@@ -35,7 +35,7 @@ Vector *VectorConstruct(){
 */
 void VectorPushBack(Vector *v, DataType val){
     v->aloc++;
-    v->vetor = (DataType**) realloc(v->vetor, (v->aloc)*sizeof(DataType*));
+    v->vetor = (DataType**) realloc(v->vetor, ((v->aloc+1)*sizeof(DataType*)));
 
     v->vetor[v->qnt] = val;
     v->qnt++;
@@ -48,8 +48,6 @@ void VectorPushBack(Vector *v, DataType val){
  * @param i Índice do elemento
 */
 void VectorRemove(Vector *v, int i){
-    //free(v->vetor[i]);
-
     for(int j = i; j < v->qnt-1; j++){
         v->vetor[j] = v->vetor[j+1];
     }

@@ -1,1 +1,11 @@
-valgrind: Resultados/Clarice/completo/prog: No such file or directory
+Tiago
+
+Mariana
+
+Rafaela
+
+Numero de bytes salvos: 1229
+Numero de bytes lidos: 0
+
+Alunos:
+Professores:

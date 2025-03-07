@@ -44,7 +44,7 @@ void DestroiDatabase(tDatabase *db){
 void LeDatabase(tDatabase *db){
     int qnt;
 
-    scanf("%d\n", &qnt);
+    scanf("%d", &qnt);
 
     for(int i = 0; i < qnt; i++){
         tAluno *a;
@@ -54,7 +54,7 @@ void LeDatabase(tDatabase *db){
         VectorPushBack(db->aluno, a);
     }
 
-    scanf("%d\n", &qnt);
+    scanf("%d", &qnt);
 
     for(int i = 0; i < qnt; i++){
         tProfessor *p;
@@ -70,13 +70,13 @@ void LeDatabase(tDatabase *db){
  * @param db Ponteiro para a estrutura da database a ser ordenada.
  */
 void OrdenaDatabase(tDatabase *db){
-    for(int i = 0; i < VectorSize(db->aluno); i++){
+    for(int i = 0; i < VectorSize(db->aluno)-1; i++){
         if(ComparaNomeAluno(VectorGet(db->aluno, i), VectorGet(db->aluno, i+1)) == -1){
             VectorSwap(db->aluno, i, i+1);
         }
     }
 
-    for(int i = 0; i < VectorSize(db->prof); i++){
+    for(int i = 0; i < VectorSize(db->prof)-1; i++){
         if(ComparaNomeProfessor(VectorGet(db->prof, i), VectorGet(db->prof, i+1)) == -1){
             VectorSwap(db->prof, i, i+1);
         }
@@ -128,10 +128,12 @@ int CarregaDatabase(tDatabase *db, FILE *file){
  * @param db Ponteiro para a estrutura da database a ser impressa.
  */
 void ImprimeDatabase(tDatabase *db){
+    printf("Alunos:\n");
     for(int i = 0; i < VectorSize(db->aluno); i++){
         ImprimeNomeAluno(VectorGet(db->aluno, i));
     }
 
+    printf("Professores:\n");
     for(int i = 0; i < VectorSize(db->prof); i++){
         ImprimeNomeProfessor(VectorGet(db->prof, i));
     }

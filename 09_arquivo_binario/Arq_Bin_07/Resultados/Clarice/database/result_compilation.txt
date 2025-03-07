@@ -58,7 +58,7 @@ vector.h:21:29: note: expected ‘Vector *’ but argument is of type ‘tProfes
       |                     ~~~~~~~~^
 database.c: In function ‘OrdenaDatabase’:
 database.c:73:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
-   73 |     for(int i = 0; i < VectorSize(db->aluno); i++){
+   73 |     for(int i = 0; i < VectorSize(db->aluno)-1; i++){
       |                                   ~~^~~~~~~
       |                                     |
       |                                     tAluno ** {aka struct Aluno **}
@@ -90,7 +90,7 @@ vector.h:56:25: note: expected ‘Vector *’ but argument is of type ‘tAluno 
    56 | void VectorSwap(Vector *v, int i, int j);
       |                 ~~~~~~~~^
 database.c:79:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
-   79 |     for(int i = 0; i < VectorSize(db->prof); i++){
+   79 |     for(int i = 0; i < VectorSize(db->prof)-1; i++){
       |                                   ~~^~~~~~
       |                                     |
       |                                     tProfessor ** {aka struct Professor **}
@@ -188,32 +188,32 @@ vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tProfes
    38 | DataType VectorGet(Vector *v, int i);
       |                    ~~~~~~~~^
 database.c: In function ‘ImprimeDatabase’:
-database.c:131:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
-  131 |     for(int i = 0; i < VectorSize(db->aluno); i++){
+database.c:132:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  132 |     for(int i = 0; i < VectorSize(db->aluno); i++){
       |                                   ~~^~~~~~~
       |                                     |
       |                                     tAluno ** {aka struct Aluno **}
 vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
    46 | int VectorSize(Vector *v);
       |                ~~~~~~~~^
-database.c:132:38: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
-  132 |         ImprimeNomeAluno(VectorGet(db->aluno, i));
+database.c:133:38: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  133 |         ImprimeNomeAluno(VectorGet(db->aluno, i));
       |                                    ~~^~~~~~~
       |                                      |
       |                                      tAluno ** {aka struct Aluno **}
 vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tAluno **’ {aka ‘struct Aluno **’}
    38 | DataType VectorGet(Vector *v, int i);
       |                    ~~~~~~~~^
-database.c:135:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
-  135 |     for(int i = 0; i < VectorSize(db->prof); i++){
+database.c:137:37: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  137 |     for(int i = 0; i < VectorSize(db->prof); i++){
       |                                   ~~^~~~~~
       |                                     |
       |                                     tProfessor ** {aka struct Professor **}
 vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tProfessor **’ {aka ‘struct Professor **’}
    46 | int VectorSize(Vector *v);
       |                ~~~~~~~~^
-database.c:136:42: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
-  136 |         ImprimeNomeProfessor(VectorGet(db->prof, i));
+database.c:138:42: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  138 |         ImprimeNomeProfessor(VectorGet(db->prof, i));
       |                                        ~~^~~~~~
       |                                          |
       |                                          tProfessor ** {aka struct Professor **}

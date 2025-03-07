@@ -1,1 +1,26 @@
-valgrind: Resultados/Clarice/professor/prog: No such file or directory
+Mariana
+
+Rafaela
+
+Tiago
+
+Numero de bytes salvos: 1031
+Mariana
+
+Rafaela
+
+Tiago
+
+Numero de bytes lidos: 1031
+
+Alunos:
+Gabriel
+Isabela
+Luisa
+Maria
+Thiago
+
+Professores:
+Mariana
+Rafaela
+Tiago

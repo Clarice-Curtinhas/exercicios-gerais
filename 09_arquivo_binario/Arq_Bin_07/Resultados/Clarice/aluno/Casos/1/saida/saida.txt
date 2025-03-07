@@ -1,16 +1,14 @@
-рс€ю
-Maria
-Luisa
-Gabriel
-Isabela
-Numero de bytes salvos: 390641362
-Numero de bytes lidos: 390696642
+Numero de bytes salvos: 1108
+Numero de bytes lidos: 1113
 
 Alunos:
-
-
-
-
-
+Gabriel
+Isabela
+Luisa
+Maria
+Thiago
 
 Professores:
+Mariana
+Rafaela
+Tiago

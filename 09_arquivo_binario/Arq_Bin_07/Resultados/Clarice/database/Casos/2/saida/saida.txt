@@ -1,1 +1,5 @@
-Error: vector_get: invalid index 5 for vector with size 5.
+Numero de bytes salvos: 1354
+Numero de bytes lidos: 0
+
+Alunos:
+Professores:
