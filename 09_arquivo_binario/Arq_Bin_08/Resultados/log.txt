@@ -1,0 +1,363 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: Clarice
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Clarice:
+ - Diretório Resultados/Clarice criado com sucesso!
+ - Diretório Resultados/Clarice/main criado com sucesso!
+ - Diretório Resultados/Clarice/contato criado com sucesso!
+ - Diretório Resultados/Clarice/lista_contato criado com sucesso!
+ - Diretório Resultados/Clarice/vector criado com sucesso!
+ - Diretório Resultados/Clarice/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Clarice/contato.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/contato.h' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/lista_contato.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/lista_contato.h' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/main.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/vector.c' encontrado!
+ - Arquivo esperado 'Respostas/Clarice/vector.h' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/main
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/main
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/main
+ - Removendo o main.o do professor da pasta Resultados/Clarice/main
+ - Copiando o Respostas/Clarice/main.c do aluno para a pasta Resultados/Clarice/main
+ - Pasta contato:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/contato
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/contato
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/contato
+ - Removendo o contato.o do professor da pasta Resultados/Clarice/contato
+ - Copiando o Respostas/Clarice/contato.c do aluno para a pasta Resultados/Clarice/contato
+ - Pasta lista_contato:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/lista_contato
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/lista_contato
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/lista_contato
+ - Removendo o lista_contato.o do professor da pasta Resultados/Clarice/lista_contato
+ - Copiando o Respostas/Clarice/lista_contato.c do aluno para a pasta Resultados/Clarice/lista_contato
+ - Pasta vector:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/vector
+ - Copiando os Includes/*.h do professor para a pasta Resultados/Clarice/vector
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Clarice/vector
+ - Removendo o vector.o do professor da pasta Resultados/Clarice/vector
+ - Copiando o Respostas/Clarice/vector.c do aluno para a pasta Resultados/Clarice/vector
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/contato.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/contato.h do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/lista_contato.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/lista_contato.h do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/main.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/vector.c do aluno para a pasta Resultados/Clarice/completo
+ - Copiando os Respostas/Clarice/vector.h do aluno para a pasta Resultados/Clarice/completo
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Compilação dos arquivos do aluno na pasta main ok!
+ - Arquivo de output gerado: Resultados/Clarice/main/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta contato ok!
+ - Arquivo de output gerado: Resultados/Clarice/contato/result_compilation.txt
+ - Erro de compilação! Verifique os arquivos da pasta lista_contato.
+ - Compilação dos arquivos do aluno na pasta vector ok!
+ - Arquivo de output gerado: Resultados/Clarice/vector/result_compilation.txt
+ - Erro de compilação! Verifique os arquivos da pasta completo.
+ - Arquivos Compilados: Erro!: 2 arquivos com erros de compilacao.
+
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/main/result_linking.txt
+ - Pasta contato:
+ - Gerando o binário prog linkando com o(s) arquivo(s) contato/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Clarice/contato/result_linking.txt
+ - Pasta lista_contato:
+ - Gerando o binário prog linkando com o(s) arquivo(s) lista_contato/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/lista_contato/result_linking.txt
+ - Pasta vector:
+ - Gerando o binário prog linkando com o(s) arquivo(s) vector/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Clarice/vector/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/completo/result_linking.txt
+ - Arquivos Linkados: Erro! 3 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 2.50) - 0 de 40 - 0% de 2.50: 0.
+ -----
+ - Pasta contato / Caso 1:
+ - Arquivo de output gerado: Resultados/Clarice/contato/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 22, frees: 22, errors: 74 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta contato / Caso 2:
+ - Arquivo de output gerado: Resultados/Clarice/contato/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 20, frees: 25, errors: 528 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta contato / Caso 3:
+ - Arquivo de output gerado: Resultados/Clarice/contato/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 9, frees: 13, errors: 386 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta contato / Caso 4:
+ - Arquivo de output gerado: Resultados/Clarice/contato/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 23, frees: 22, errors: 372 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta contato (máximo 2.50) - 0 de 40 - 0% de 2.50: 0.
+ -----
+ - Pasta lista_contato / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta lista_contato / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta lista_contato / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta lista_contato / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta lista_contato (máximo 2.50) - 0 de 40 - 0% de 2.50: 0.
+ -----
+ - Pasta vector / Caso 1:
+ - Arquivo de output gerado: Resultados/Clarice/vector/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta vector / Caso 2:
+ - Arquivo de output gerado: Resultados/Clarice/vector/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 30, frees: 30, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta vector / Caso 3:
+ - Arquivo de output gerado: Resultados/Clarice/vector/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 25, frees: 25, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta vector / Caso 4:
+ - Arquivo de output gerado: Resultados/Clarice/vector/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 32, frees: 32, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta vector (máximo 2.50) - 40.00 de 40 - 100.00% de 2.50: 2.50.
+ -----
+ - Pasta completo / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta completo (máximo 2.50) - 0 de 40 - 0% de 2.50: 0.
+ -----
+
+#######################################
+ALUNO: Clarice/output
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Clarice/output:
+ - Diretório Resultados/Clarice/output criado com sucesso!
+ - Diretório Resultados/Clarice/output/main criado com sucesso!
+ - Diretório Resultados/Clarice/output/contato criado com sucesso!
+ - Diretório Resultados/Clarice/output/lista_contato criado com sucesso!
+ - Diretório Resultados/Clarice/output/vector criado com sucesso!
+ - Diretório Resultados/Clarice/output/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Clarice/output/contato.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/contato.h' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/lista_contato.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/lista_contato.h' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/vector.c' não encontrado!
+ - Arquivo esperado 'Respostas/Clarice/output/vector.h' não encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/main
+ - Pasta contato:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/contato
+ - Pasta lista_contato:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/lista_contato
+ - Pasta vector:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/vector
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Clarice/output/completo
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Erro de compilação! Verifique os arquivos da pasta main.
+ - Erro de compilação! Verifique os arquivos da pasta contato.
+ - Erro de compilação! Verifique os arquivos da pasta lista_contato.
+ - Erro de compilação! Verifique os arquivos da pasta vector.
+ - Erro de compilação! Verifique os arquivos da pasta completo.
+ - Arquivos Compilados: Erro!: 5 arquivos com erros de compilacao.
+
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/main/result_linking.txt
+ - Pasta contato:
+ - Gerando o binário prog linkando com o(s) arquivo(s) contato/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/contato/result_linking.txt
+ - Pasta lista_contato:
+ - Gerando o binário prog linkando com o(s) arquivo(s) lista_contato/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/lista_contato/result_linking.txt
+ - Pasta vector:
+ - Gerando o binário prog linkando com o(s) arquivo(s) vector/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/vector/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Clarice/output/completo/result_linking.txt
+ - Arquivos Linkados: Erro! 5 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 2.50) - 0 de 10 - 0% de 2.50: 0.
+ -----
+ - Pasta contato / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta contato (máximo 2.50) - 0 de 10 - 0% de 2.50: 0.
+ -----
+ - Pasta lista_contato / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta lista_contato (máximo 2.50) - 0 de 10 - 0% de 2.50: 0.
+ -----
+ - Pasta vector / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta vector (máximo 2.50) - 0 de 10 - 0% de 2.50: 0.
+ -----
+ - Pasta completo / Caso *:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta completo (máximo 2.50) - 0 de 10 - 0% de 2.50: 0.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: Clarice
+ - Arquivos Esperados Corretos: 7 de 7
+ - Pastas Compiladas Corretamente: 3 de 5 
+ - Pastas Linkadas Corretamente: 2 de 5
+ - Teste main
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice para o teste main: 0
+ - Teste contato
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice para o teste contato: 0
+ - Teste lista_contato
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice para o teste lista_contato: 0
+ - Teste vector
+ - Resultados corretos: 4 de 4
+ - Valgrinds corretos: 4 de 4
+ - Nota de Clarice para o teste vector: 2.50
+ - Teste completo
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice para o teste completo: 0
+ - Nota de Clarice: 0+(2.50)+(0)+(0)+(0)+lista_(0)
+ - Nota de Clarice: 
+
+----------------------------------------------------------------------------
+Aluno: Clarice/output
+ - Arquivos Esperados Corretos: 0 de 7
+ - Pastas Compiladas Corretamente: 0 de 5 
+ - Pastas Linkadas Corretamente: 0 de 5
+ - Teste main
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice/output para o teste main: 0
+ - Teste contato
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice/output para o teste contato: 0
+ - Teste lista_contato
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice/output para o teste lista_contato: 0
+ - Teste vector
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice/output para o teste vector: 0
+ - Teste completo
+ - Resultados corretos: 0 de 4
+ - Valgrinds corretos: 0 de 4
+ - Nota de Clarice/output para o teste completo: 0
+ - Nota de Clarice/output: 0+(0)+(0)+(0)+(0)+lista_(0)
+ - Nota de Clarice/output: 
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+

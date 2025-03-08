@@ -1,0 +1,25 @@
+vector.c: In function ‘VectorConstruct’:
+vector.c:18:19: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   18 |     v = (Vector*) calloc(1, sizeof(Vector));
+      |                   ^~~~~~
+vector.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+vector.c:18:19: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   18 |     v = (Vector*) calloc(1, sizeof(Vector));
+      |                   ^~~~~~
+vector.c:18:19: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+vector.c: In function ‘VectorPushBack’:
+vector.c:40:29: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   40 |     v->vetor = (DataType**) realloc(v->vetor, (v->aloc+1)*sizeof(DataType*));
+      |                             ^~~~~~~
+vector.c:40:29: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+vector.c:40:29: warning: incompatible implicit declaration of built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+vector.c:40:29: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+vector.c: In function ‘VectorDestroy’:
+vector.c:89:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   89 |     free(v->vetor);
+      |     ^~~~
+vector.c:89:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+vector.c:89:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+vector.c:89:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’

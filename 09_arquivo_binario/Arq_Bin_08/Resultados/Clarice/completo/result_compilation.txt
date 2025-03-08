@@ -1,0 +1,229 @@
+lista_contato.c: In function ‘CriarListaContato’:
+lista_contato.c:19:30: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   19 |     lista = (tListaContato*) calloc(1, sizeof(tListaContato));
+      |                              ^~~~~~
+lista_contato.c:4:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+    3 | #include "vector.h"
+  +++ |+#include <stdlib.h>
+    4 | 
+lista_contato.c:19:30: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   19 |     lista = (tListaContato*) calloc(1, sizeof(tListaContato));
+      |                              ^~~~~~
+lista_contato.c:19:30: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+lista_contato.c:20:18: warning: assignment to ‘tContato **’ {aka ‘struct Contato **’} from incompatible pointer type ‘Vector *’ [-Wincompatible-pointer-types]
+   20 |     lista->lista = VectorConstruct();
+      |                  ^
+lista_contato.c: In function ‘DestruirListaContato’:
+lista_contato.c:31:20: warning: passing argument 1 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   31 |     VectorDestroy(l->lista, DestruirContato);
+      |                   ~^~~~~~~
+      |                    |
+      |                    tContato ** {aka struct Contato **}
+In file included from lista_contato.c:3:
+vector.h:54:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   54 | void VectorDestroy(Vector *v, void (*destroy)(DataType));
+      |                    ~~~~~~~~^
+lista_contato.c:31:29: warning: passing argument 2 of ‘VectorDestroy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   31 |     VectorDestroy(l->lista, DestruirContato);
+      |                             ^~~~~~~~~~~~~~~
+      |                             |
+      |                             void (*)(tContato *) {aka void (*)(struct Contato *)}
+vector.h:54:38: note: expected ‘void (*)(void *)’ but argument is of type ‘void (*)(tContato *)’ {aka ‘void (*)(struct Contato *)’}
+   54 | void VectorDestroy(Vector *v, void (*destroy)(DataType));
+      |                               ~~~~~~~^~~~~~~~~~~~~~~~~~
+lista_contato.c:32:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   32 |     free(l);
+      |     ^~~~
+lista_contato.c:32:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+lista_contato.c:32:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+lista_contato.c:32:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+lista_contato.c: In function ‘AdicionarContatoListaContato’:
+lista_contato.c:45:36: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+   45 |     for(int i = 0; i < VectorSize(l->lista); i++){
+      |                                   ~^~~~~~~
+      |                                    |
+      |                                    tContato ** {aka struct Contato **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+lista_contato.c:46:52: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |         if((ComparaNomeContato(contato, VectorGet(l->lista, i)) == 1) || (ComparaTelefoneContato(contato, VectorGet(l->lista, i)) == 1)){
+      |                                                   ~^~~~~~~
+      |                                                    |
+      |                                                    tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c:46:118: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+   46 |         if((ComparaNomeContato(contato, VectorGet(l->lista, i)) == 1) || (ComparaTelefoneContato(contato, VectorGet(l->lista, i)) == 1)){
+      |                                                                                                                     ~^~~~~~~
+      |                                                                                                                      |
+      |                                                                                                                      tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c:52:36: warning: passing argument 1 of ‘VectorPushBack’ from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     if(achou == 0) VectorPushBack(l->lista, contato);
+      |                                   ~^~~~~~~
+      |                                    |
+      |                                    tContato ** {aka struct Contato **}
+vector.h:21:29: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   21 | void VectorPushBack(Vector *v, DataType val);
+      |                     ~~~~~~~~^
+lista_contato.c:43:20: warning: unused variable ‘a’ [-Wunused-variable]
+   43 |     int achou = 0, a;
+      |                    ^
+lista_contato.c: In function ‘CarregarListaContato’:
+lista_contato.c:86:29: warning: passing argument 1 of ‘VectorPushBack’ from incompatible pointer type [-Wincompatible-pointer-types]
+   86 |             VectorPushBack(l->lista, c);
+      |                            ~^~~~~~~
+      |                             |
+      |                             tContato ** {aka struct Contato **}
+vector.h:21:29: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   21 | void VectorPushBack(Vector *v, DataType val);
+      |                     ~~~~~~~~^
+lista_contato.c: In function ‘SalvarListaContato’:
+lista_contato.c:106:27: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  106 |     int num = VectorSize(l->lista);
+      |                          ~^~~~~~~
+      |                           |
+      |                           tContato ** {aka struct Contato **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+lista_contato.c:115:38: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |             SalvarContato(VectorGet(l->lista, i), arq);
+      |                                     ~^~~~~~~
+      |                                      |
+      |                                      tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c: In function ‘BuscarPorNumeroTelefoneListaContato’:
+lista_contato.c:129:27: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  129 |     int tam = VectorSize(l->lista), achou = 0;
+      |                          ~^~~~~~~
+      |                           |
+      |                           tContato ** {aka struct Contato **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+lista_contato.c:139:55: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  139 |         if(ComparaTelefoneContato(compara, VectorGet(l->lista, i)) == 1){
+      |                                                      ~^~~~~~~
+      |                                                       |
+      |                                                       tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c:140:40: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  140 |             ImprimirContato(VectorGet(l->lista, i));
+      |                                       ~^~~~~~~
+      |                                        |
+      |                                        tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c: In function ‘BuscarPorNomeListaContato’:
+lista_contato.c:158:27: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  158 |     int tam = VectorSize(l->lista), achou = 0;
+      |                          ~^~~~~~~
+      |                           |
+      |                           tContato ** {aka struct Contato **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+lista_contato.c:168:51: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  168 |         if(ComparaNomeContato(compara, VectorGet(l->lista, i)) == 1){
+      |                                                  ~^~~~~~~
+      |                                                   |
+      |                                                   tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c:169:40: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  169 |             ImprimirContato(VectorGet(l->lista, i));
+      |                                       ~^~~~~~~
+      |                                        |
+      |                                        tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c: In function ‘ImprimirListaContato’:
+lista_contato.c:186:27: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  186 |     int tam = VectorSize(l->lista);
+      |                          ~^~~~~~~
+      |                           |
+      |                           tContato ** {aka struct Contato **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+lista_contato.c:192:36: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  192 |         ImprimirContato(VectorGet(l->lista, i));
+      |                                   ~^~~~~~~
+      |                                    |
+      |                                    tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c: In function ‘RemoverContatoListaContato’:
+lista_contato.c:204:27: warning: passing argument 1 of ‘VectorSize’ from incompatible pointer type [-Wincompatible-pointer-types]
+  204 |     int tam = VectorSize(l->lista), achou = 0;
+      |                          ~^~~~~~~
+      |                           |
+      |                           tContato ** {aka struct Contato **}
+vector.h:46:24: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   46 | int VectorSize(Vector *v);
+      |                ~~~~~~~~^
+lista_contato.c:214:55: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  214 |         if(ComparaTelefoneContato(compara, VectorGet(l->lista, i)) == 1){
+      |                                                      ~^~~~~~~
+      |                                                       |
+      |                                                       tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c:215:40: warning: passing argument 1 of ‘VectorGet’ from incompatible pointer type [-Wincompatible-pointer-types]
+  215 |             DestruirContato(VectorGet(l->lista, i));
+      |                                       ~^~~~~~~
+      |                                        |
+      |                                        tContato ** {aka struct Contato **}
+vector.h:38:28: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   38 | DataType VectorGet(Vector *v, int i);
+      |                    ~~~~~~~~^
+lista_contato.c:216:27: warning: passing argument 1 of ‘VectorRemove’ from incompatible pointer type [-Wincompatible-pointer-types]
+  216 |             VectorRemove(l->lista, i);
+      |                          ~^~~~~~~
+      |                           |
+      |                           tContato ** {aka struct Contato **}
+vector.h:29:27: note: expected ‘Vector *’ but argument is of type ‘tContato **’ {aka ‘struct Contato **’}
+   29 | void VectorRemove(Vector *v, int i);
+      |                   ~~~~~~~~^
+lista_contato.c:202:23: warning: unused variable ‘numero’ [-Wunused-variable]
+  202 |     unsigned long int numero;
+      |                       ^~~~~~
+vector.c: In function ‘VectorConstruct’:
+vector.c:18:19: warning: implicit declaration of function ‘calloc’ [-Wimplicit-function-declaration]
+   18 |     v = (Vector*) calloc(1, sizeof(Vector));
+      |                   ^~~~~~
+vector.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+vector.c:18:19: warning: incompatible implicit declaration of built-in function ‘calloc’ [-Wbuiltin-declaration-mismatch]
+   18 |     v = (Vector*) calloc(1, sizeof(Vector));
+      |                   ^~~~~~
+vector.c:18:19: note: include ‘<stdlib.h>’ or provide a declaration of ‘calloc’
+vector.c: In function ‘VectorPushBack’:
+vector.c:40:29: warning: implicit declaration of function ‘realloc’ [-Wimplicit-function-declaration]
+   40 |     v->vetor = (DataType**) realloc(v->vetor, (v->aloc+1)*sizeof(DataType*));
+      |                             ^~~~~~~
+vector.c:40:29: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+vector.c:40:29: warning: incompatible implicit declaration of built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+vector.c:40:29: note: include ‘<stdlib.h>’ or provide a declaration of ‘realloc’
+vector.c: In function ‘VectorDestroy’:
+vector.c:89:5: warning: implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+   89 |     free(v->vetor);
+      |     ^~~~
+vector.c:89:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
+vector.c:89:5: warning: incompatible implicit declaration of built-in function ‘free’ [-Wbuiltin-declaration-mismatch]
+vector.c:89:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘free’
